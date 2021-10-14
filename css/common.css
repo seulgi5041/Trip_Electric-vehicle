@@ -5,6 +5,15 @@
     margin: 0; padding: 0; 
     font-family: Arial, 'sans-serif';
 }
-a { text-decoration: none !important; }
+html { 
+    font-size:62.5%;
+    background-color: #0F4C81;
+    color: #fff;
+}
+a { 
+    text-decoration: none !important; 
+    color: #fff;
+    /* font-size: 1.6rem; */
+}
 img { border: 0; }
 ul { list-style: none; }
