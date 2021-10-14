@@ -17,11 +17,12 @@
                     <li><a href="#">전기차 여행 코스</a></li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">충전소찾기</a></li>
-                    <li><a href="#">지구를 지키는 여행</a></li>
+                    <!-- pc에서만 나옴 -->
+                    <li><a href="#" class="pc_only">지구를 지키는 여행</a></li>
                 </ul>
                 <!-- sns메뉴 -->
-                <div class="sns menu">
-                    <ul class="sns_logo">
+                <div class="right_wrap">
+                    <ul class="sns">
                         <li><a href="#" target="_blank"><img src="./images/main/ico_facebook.png" alt="페이스북으로 링크되는 아이콘입니다."></a></li>
                         <li><a href="#" target="_blank"><img src="./images/main/ico_youtube.png" alt="유튜브로 링크되는 아이콘입니다."></a></li>
                         <li><a href="#" target="_blank"><img src="./images/main/ico_instagram.png" alt="인스타그램으로 링크되는 아이콘입니다."></a></li>
@@ -36,14 +37,186 @@
             </div>
         </div>
         <!-- 메뉴 아래 선 -->
-        <div class="path"></div>
+        <div class="path">
+            <hr />
+        </div>
         <!-- 하단 lnb메뉴:hover -->
         <div class="lnb_container">
             <div class="lnb">
-                
+                <div>전기차 개요</div>
+                <div>전기차 충전정보</div>
+            </div>
+            <div class="lnb">
+                <div>시간을 달려</div>
+                <div>푸르게 푸르게</div>
+                <div>감성충만 #SNS</div>
+            </div>
+            <div class="lnb">
+                <div>전기차 개요</div>
+                <div>전기차 충전정보</div>
             </div>
         </div>
     </header>
 
+    <!-- 메인 -->
+    <section id="main_content">
+        <!-- 메인_영상 -->
+        <article id="main_section">
+            <div id="video_bg"></div>
+        </article>
+        
+        <!-- 두번째 배경화면_애니메이션효과 -->
+        <article id="bg">
+            <div id="bg_img"></div>
+        </article>
+
+        <!-- 국내여행지_slide -->
+        <article id="local_trip">
+            <!-- <img src="" alt=""> -->
+            <h2>충전소가 있는 국내여행지</h2>
+            <div id="trip">
+                <a href="#" class="location">
+                    <!-- marginright : 32px -->
+                    <img src="http://via.placeholder.com/392x440.png" alt="서산_slide">
+                </a>
+                <a href="#" class="location">
+                    <!-- marginright : 32px -->
+                    <img src="http://via.placeholder.com/392x440.png" alt="순천_slide">
+                </a>
+                <a href="#" class="location">
+                    <!-- marginright : 32px -->
+                    <img src="http://via.placeholder.com/392x440.png" alt="당진_slide">
+                </a>
+                <a href="#" class="location">
+                    <!-- marginright : 32px -->
+                    <img src="http://via.placeholder.com/392x440.png" alt="전주_slide">
+                </a>
+            </div>
+        </article>
+
+        <!-- 여행 가기 전 체크사항 및 지도 -->
+        <article id="check_content">
+            <!-- 배터리 그림_애니메이션 -->
+            <div id="active_box">
+                <div>
+                    <img src="http://via.placeholder.com/560x727.png" alt="배터리 그림">
+                </div>
+                <!-- <div>
+                    <span class="active">
+                        적정량 충전 후 
+                        <br /> 자리를 양보해 주세요.
+                    </span>
+    
+                    <span class="active">
+                        충전 중 자리를 비우신다면, 
+                        <br /> 연락처를 남겨주세요.
+                    </span>
+    
+                    <span class="active">
+                        떠나기 전, 
+                        <br /> 케이블 정리는 깔끔하게!
+                    </span>
+                </div>                 -->
+            </div>
+
+            <!-- 유튜브, 지도 링크 부분 -->
+            <div id="check_container">
+                <div id="check box">
+                    <!-- <h2>여행 전 확인하세요</h2> -->
+                    <img src="http://via.placeholder.com/860x727.png?text=Check+it+out+before+traveling" alt="여행 전 확인하세요">
+                    <!-- <div class="charge">
+                        <a href="#" class="circle">
+                            <img src="" alt="유튜브로 통합니다.">
+                            <span>충전 잔량 확인</span>
+                        </a>
+                    </div> -->
+
+                    <!-- <div class="map">
+                        <a href="#" class="circle">
+                            <img src="" alt="충전소 위치 확인 지도">
+                            <span>충전소 위치 확인</span>
+                        </a>
+                    </div> -->
+
+                    <!-- <div class="socket">
+                        <a href="#" class="circle">
+                            <img src="" alt="유튜브로 통합니다.">
+                            <span>충전기 단자 확인</span>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </article>
+
+        <!-- slide -->
+        <aside id="slide_aside">
+            <div>
+                <img src="http://via.placeholder.com/1440x400.png" alt="슬라이드">
+            </div>
+        </aside>
+
+        <!-- FAQ -->
+        <article id="qna_content">
+            <div id="qna_container">
+                <h2>FAQ</h2>
+                <div id="question">
+                    <a href="#">
+                        <img src="http://via.placeholder.com/392x500.png" alt="FAQ1">
+                    </a>
+                    <a href="#">
+                        <img src="http://via.placeholder.com/392x500.png" alt="FAQ1">
+                    </a>
+                    <a href="#">
+                        <img src="http://via.placeholder.com/392x500.png" alt="FAQ1">
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- 지구를 지키는 여행법 -->
+        <!-- only_pc -->
+        <aside id="eco wrap">
+            <div id="eco earth">
+                <!-- <img src="" alt="지구본이미지"> -->
+                <h2>지구를 지키는 여행방법</h2>
+            </div>
+            <div id="eco trip">
+                <a href="#">
+                    <img src="http://via.placeholder.com/392x440.png" targer="_blank" alt="자전거 라이딩 코스. 두루누비 홈페이지로 연결됩니다.">
+                </a>
+                <a href="#">
+                    <img src="http://via.placeholder.com/392x440.png" alt="줍깅 캠페인 이미지">
+                </a>
+                <a href="#">
+                    <img src="http://via.placeholder.com/392x440.png" alt="친환경 여행 캠페인">
+                </a>
+            </div>
+        </aside>
+    </section>
+
+    <!-- top_button -->
+
+
+    <!-- 푸터 -->
+    <footer id="main_footer">
+        <div id="footer title">
+            <a href="#">전기차와 함께하는 드라이브</a>
+        </div>
+
+        <div>
+            <a href="#">
+                <span>전기차 소개</span>
+                <span>전기차 충전소 위치</span>
+                <span>이용약관</span>
+                <span>개인정보처리방침</span>
+            </a>
+        </div>
+
+        <div>
+            <div>
+                COPYRIGHT ⓒ All rights RESERVED.
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
