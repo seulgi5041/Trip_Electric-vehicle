@@ -71,6 +71,11 @@ ul { list-style: none; }
     overflow: hidden;
 }
 
+#main_header .nav {
+    position: absolute;
+    left: 300px;
+}
+
 #main_header ul > li {
     float: left;
     /* margin: 0 10px; */
