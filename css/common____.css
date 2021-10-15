@@ -13,20 +13,22 @@ html {
 a { 
     text-decoration: none !important; 
     color: #fff;
+    /* font-size: 1.6rem; */
 }
 img { border: 0; }
 ul { list-style: none; }
 
 
-/* 헤더 */
 
-/* 메인메뉴 */
-/* 로고 */
+/* 헤더 */
 #main_header {
-    position: relative;
-    width: 100%;
     height: 420px;
-    background: black;
+    /* background: black; */
+    color: #fff;
+}
+
+#main_header a {
+    color: white;
 }
 
 #main_header > .gnb_container {
@@ -44,9 +46,9 @@ ul { list-style: none; }
     margin: 0 auto;
 }
 
+
 #main_header .logo {
-    position: absolute;
-    left: 30px;
+    margin: 0 50px;
 }
 
 #main_header .logo a{
@@ -64,44 +66,51 @@ ul { list-style: none; }
     background-image: url(../images/main/logo.png);
 }
 
-#main_header .nav ul {
+#main_header nav ul {
     float: left;
     overflow: hidden;
 }
 
 #main_header .nav {
-    margin-left: 300px;
+    position: absolute;
+    left: 300px;
+}
+
+#main_header ul > li {
+    float: left;
+    /* margin: 0 10px; */
 }
 
 #main_header .nav > li {
-    float: left;
-    overflow: hidden;
     margin: 0 40px;
 }
 
-#main_header .nav > li a {
-    font-size: 1.8rem;
-    font-weight: 800;
-    padding: 10px 30px;
-    line-height: 139px;
+#main_header .sns_menu ul > li {
+    margin: 0 5px;
 }
 
-#main_header .nav > li a:hover {
+
+#main_header ul > li a {
+    font-size: 1.8rem;
+    line-height: 139px;
+    font-weight: 700;
+}
+
+#main_header ul > li a:hover {
     color: #BFFF00;
 }
 
+/* sns메뉴 */
 #main_header .sns_menu {
-    position: absolute;
-    right: 50px;
+    float: right;
 }
 
-#main_header .sns_menu > ul >  li {
-    float: left;
-    overflow: hidden;
-    margin-top: 40px;
+
+#main_header > .gnb_container > .gnb > .sns_menu ul > li {
+    padding: 40px 0;
 }
 
-#main_header .sns_menu > ul >  li a {
+#main_header .sns_menu ul a {
     display: block;
     overflow: hidden;
     width: 50px;
@@ -109,6 +118,11 @@ ul { list-style: none; }
     text-indent: -99999em;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+#main_header .sns_menu ul a:hover {
+    border: 2px solid #BFFF00;
+    border-radius: 8px;
 }
 
 #main_header .sns_menu ul a.facebook {
@@ -127,23 +141,7 @@ ul { list-style: none; }
     background-image: url(../images/main/ico_twitter.png);    
 }
 
-#main_header .sns_menu ul a:hover {
-    border: 2px solid #BFFF00;
-    border-radius: 8px;
-}
-
-#main_header::after {
-    display: block;
-    clear: both;
-    content: '';
-}
-
-#main_header .trigger {
-    float: right;
-}
-
-
-/* 메뉴_bar */
+/* 메뉴선 */
 .path {
     position: fixed;
     width: 100%;
@@ -154,9 +152,16 @@ ul { list-style: none; }
 }
 
 
-/* 하위 lnb메뉴 */
+/* 모바일버튼 */
+.trigger {
+    display: none;
+}
+
+
+
+/* 하단 lnb 메뉴 */
 #main_header > .lnb_container {
-    /* display: none; */
+    display: none;
     height: 280px;
     width: 100%;
     position: fixed;
@@ -164,3 +169,50 @@ ul { list-style: none; }
     top: 140px;
     z-index: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* 푸터 */
+#main_footer {
+    height: 230px;
+    background: black;
+}
+
+#footer_title a {
+    line-height: 70px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+.footer_logo {
+    margin: 0 200px;
+}
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리 */
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media screen and (min-width: 1024px) {}
+
+
