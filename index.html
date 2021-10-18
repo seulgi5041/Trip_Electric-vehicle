@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전기차와 떠나는 여행</title>
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href=".css">
 </head>
 <body>
-
+<div id="wrap">
     <!-- 헤더 -->
     <header id="main_header">
         <div class="gnb_container">
@@ -47,37 +48,40 @@
         <!-- 하단 lnb메뉴:hover -->
         <div class="lnb_container">
             <div class="lnb">
-                <div>전기차 개요</div>
-                <div>전기차 충전정보</div>
+                <ul>
+                    <li><a href="#" target="_blank">전기차 개요</a></li>
+                    <li><a href="#" target="_blank">전기차 충전정보</a></li>
+                </ul>              
             </div>
             <div class="lnb">
-                <div>시간을 달려</div>
-                <div>푸르게 푸르게</div>
-                <div>감성충만 #SNS</div>
+                <ul>
+                    <li><a href="#" target="_blank">시간을 달려</a></li>
+                    <li><a href="#" target="_blank">푸르게 푸르게</a></li>
+                    <li><a href="#" target="_blank">감성충만 #SNS</a></li>
+                </ul>
             </div>
             <div class="lnb">
-                <div>전기차 개요</div>
-                <div>전기차 충전정보</div>
-            </div>
+                <ul>
+                    <li><a href="https://www.ev.or.kr/evmonitor" target="_blank">전기차 충전소 모니터링</a></li>
+                    <li><a href="https://evc.kepco.co.kr:4445/map/map.do" target="_blank">한국전력 전기차충전 서비스</a></li>
+                </ul>
         </div>
     </header>
 
     <!-- 메인 -->
     <section id="main_content">
         <!-- 메인_영상 -->
-        <article id="main_section">
+        <article id="video_container">
             <div id="video_bg">
-                <!-- <video class="visual_video" playsinline loop muted autoplay>
+                <video playsinline loop muted autoplay>
                     <source src="./images/main/video/HYUNDAI-car.mp4" type="video/mp4">
-                </video> -->
+                </video>
             </div>
         </article>
         
         <!-- 두번째 배경화면_애니메이션효과 -->
         <article id="bg">
-            <div id="bg_img">
-                
-            </div>
+            <div class="bg_img"></div>
         </article>
 
         <!-- 국내여행지_slide -->
@@ -234,7 +238,7 @@
             </div>
         </div>
     </footer>
-
+</div>
 
 
 
