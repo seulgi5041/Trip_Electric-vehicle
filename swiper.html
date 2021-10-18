@@ -12,7 +12,7 @@
         <style>
             html, body {
             position: relative;
-            height: 100%;
+            height: 500px;
             }
             body {
             background: #0F4C81;
@@ -26,8 +26,6 @@
             width: 100%;
             height: 100%;
             }
-
-
             .swiper-slide {
             text-align: center;
             font-size: 18px;
@@ -148,11 +146,13 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
         pagination: {
-            el: '.swiper-pagination',
-            type: 'progressbar'
+        el: '.swiper-pagination',
+        clickable: true,
         },
-        });
+    });
     </script>
 </body>
 </html>

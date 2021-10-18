@@ -7,6 +7,9 @@
     <title>전기차와 떠나는 여행</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="./css/swiper.min.css">
+
 </head>
 <body>
 <div id="wrap">
@@ -92,67 +95,94 @@
         <!-- 국내여행지_slide -->
         <article id="local_trip">
             <h2>충전소가 있는 국내여행지</h2>
-            <div id="trip">
-                <a href="#" class="card-location">
-                    <div class="card-gradient"></div>
-                    <div class="text-title">
-                        <h3>서산</h3>
-                        <p>머드맥스 바로 그곳!</p>
+            <div class="swiper-container">
+                <div class="trip swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="card-location">
+                            <div class="card-gradient"></div>
+                            <div class="text-title">
+                                <h3>서산</h3>
+                                <p>머드맥스 바로 그곳!</p>
+                            </div>
+                            <img src="./images/location/seosan1.png" alt="서산_slide">
+                            <div class="text-box">
+                                <h3>해미읍성</h3>
+                            </div>
+                        </a>
                     </div>
-                    <img src="./images/location/seosan1.png" alt="서산_slide">
-                    <div class="text-box">
-                        <h3>해미읍성</h3>
+                    
+                    <div class="swiper-slide">
+                        <a href="#" class="card-location">
+                            <div class="card-gradient"></div>
+                            <div class="text-title">
+                                <h3>순천</h3>
+                                <p>갈대밭#인생샷</p>
+                            </div>
+                            <img src="./images/location/suncheon1.png" alt="순천_slide">
+                            <div class="text-box">
+                                <h3>순천만습지</h3>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                
-                <a href="#" class="card-location">
-                    <div class="card-gradient"></div>
-                    <div class="text-title">
-                        <h3>순천</h3>
-                        <p>갈대밭#인생샷</p>
+        
+                    <div class="swiper-slide">
+                        <a href="#" class="card-location">
+                            <div class="card-gradient"></div>
+                            <div class="text-title">
+                                <h3>당진</h3>
+                                <p>국내에서 느끼는 해외감성</p>
+                            </div>
+                            <img src="./images/location/dangjin1.png" alt="당진_slide">
+                            <div class="text-box">
+                                <h3>삽교호놀이공원</h3>
+                            </div>
+                        </a>
                     </div>
-                    <img src="./images/location/suncheon1.png" alt="순천_slide">
-                    <div class="text-box">
-                        <h3>순천만습지</h3>
+        
+                    <div class="swiper-slide">
+                        <a href="#" class="card-location">
+                            <div class="card-gradient"></div>
+                            <div class="text-title">
+                                <h3>전주</h3>
+                                <p>한국의 멋이 살아있는 도시</p>
+                            </div>
+                            <img src="./images/location/jeonju1.png" alt="전주_slide">
+                            <div class="text-box">
+                                <h3>전주한옥마을</h3>
+                            </div>
+                        </a>
                     </div>
-                </a>
-
-                <a href="#" class="card-location">
-                    <div class="card-gradient"></div>
-                    <div class="text-title">
-                        <h3>당진</h3>
-                        <p>국내에서 느끼는 해외감성</p>
+        
+                    <div class="swiper-slide">
+                        <a href="#" class="card-location">
+                            <div class="card-gradient"></div>
+                            <div class="text-title">
+                                <h3>삼척</h3>
+                                <p>BTS도 반한 푸른 바다</p>
+                            </div>
+                            <img src="./images/location/samcheok.png" alt="삼척_slide">
+                            <div class="text-box">
+                                <h3>삼척해양레일바이크</h3>
+                            </div>
+                        </a>
                     </div>
-                    <img src="./images/location/dangjin1.png" alt="당진_slide">
-                    <div class="text-box">
-                        <h3>삽교호놀이공원</h3>
+        
+                    <div class="swiper-slide">
+                        <a href="#" class="card-location">
+                            <div class="card-gradient"></div>
+                            <div class="text-title">
+                                <h3>서산</h3>
+                                <p>머드맥스 바로 그곳!</p>
+                            </div>
+                            <img src="./images/location/seosan1.png" alt="서산_slide">
+                            <div class="text-box">
+                                <h3>해미읍성</h3>
+                            </div>
+                        </a>
                     </div>
-                </a>
-
-                <a href="#" class="card-location">
-                    <div class="card-gradient"></div>
-                    <div class="text-title">
-                        <h3>전주</h3>
-                        <p>한국의 멋이 살아있는 도시</p>
-                    </div>
-                    <img src="./images/location/jeonju1.png" alt="전주_slide">
-                    <div class="text-box">
-                        <h3>전주한옥마을</h3>
-                    </div>
-                </a>
-
-                <a href="#" class="card-location">
-                    <div class="card-gradient"></div>
-                    <div class="text-title">
-                        <h3>삼척</h3>
-                        <p>BTS도 반한 푸른 바다</p>
-                    </div>
-                    <img src="./images/location/samcheok.png" alt="삼척_slide">
-                    <div class="text-box">
-                        <h3>삼척해양레일바이크</h3>
-                    </div>
-                </a>
-
+                    
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </article>
 
@@ -288,7 +318,22 @@
     </footer>
 </div>
 
+<script src="./js/jquery-2.2.4.min.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
 
+<script src="./js/header-gnb.js"></script>
+<script src="./js/swiper.min.js"></script>
+
+<script>
+        var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 32,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+    });
+</script>
 
 </body>
 </html>

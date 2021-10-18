@@ -1,5 +1,6 @@
 @charset "UTF-8"
 
+
 /* 초기화 */
 * { 
     margin: 0; padding: 0; 
@@ -47,12 +48,24 @@ ul { list-style: none; }
 /* 슬라이드 */
 /* 여행지역_카드부분 */
 
-#local_trip
-
-#trip {
+#local_trip {
+    margin-top: 60px;
     text-align: center;
-    margin-top: 130px;
 }
+
+#local_trip h2 {
+    padding: 20px 0;
+    font-size: 2.0rem;
+}
+
+.swiper-container {
+    width: 1240px;
+    height: 500px;
+    display: visible;
+    /* text-align: center; */
+    /* margin-top: 130px; */
+}
+
 
 .card-location {
     position: relative;
