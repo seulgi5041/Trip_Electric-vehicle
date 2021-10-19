@@ -18,9 +18,13 @@
             background: #0F4C81;
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
             font-size: 14px;
-            color:#000;
+            color:#fff;
             margin: 0;
             padding: 0;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
             }
             .swiper-container {
             width: 100%;
@@ -29,7 +33,7 @@
             .swiper-slide {
             text-align: center;
             font-size: 18px;
-            background: #fff;
+            background: rgba(15,76,129,0.3);
 
             /* Center slide text vertically */
             display: -webkit-box;
@@ -137,7 +141,7 @@
             </div>
             
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-scrollbar"></div>
     </div>
 
     <!-- Swiper JS -->
@@ -149,8 +153,8 @@
         slidesPerView: 4,
         spaceBetween: 30,
         pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+        el: '.swiper-scrollbar',
+        hide: true,
         },
     });
     </script>

@@ -4,7 +4,7 @@
 /* 초기화 */
 * { 
     margin: 0; padding: 0; 
-    font-family: Arial, 'sans-serif';
+    font-family: 'NanumSquare', Arial, 'sans-serif';
 }
 html { 
     font-size:62.5%;
@@ -24,9 +24,10 @@ ul { list-style: none; }
 /* 메인 */
 #main_content {
     margin: 0 auto;
-    /* width: 960px; */
+    width: 100%;
 }
 
+/* 비디오 */
 #video_container {
     width: 100%;
     height: 1080px;
@@ -36,8 +37,23 @@ ul { list-style: none; }
     left: 0; 
 }
 
+/* 배경이미지 */
+#bg {
+    position: relative;
+    height: 1080px;
+    width: 100%;
+}
 
-
+#bg > .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/main/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -50,22 +66,30 @@ ul { list-style: none; }
 
 #local_trip {
     margin-top: 60px;
-    text-align: center;
+    /* text-align: center; */
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
 }
 
 #local_trip h2 {
-    padding: 20px 0;
-    font-size: 2.0rem;
+    padding: 50px 0;
+    font-size: 2.5rem;
 }
 
 .swiper-container {
-    width: 1240px;
-    height: 500px;
-    display: visible;
-    /* text-align: center; */
+    width: 100%;
+    height: 100%;
     /* margin-top: 130px; */
 }
 
+.swiper-slide .text-box {
+    text-align: center;
+}
+
+.swiper-slide:first-child {
+    
+}
 
 .card-location {
     position: relative;
@@ -78,6 +102,7 @@ ul { list-style: none; }
     height: 440px;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.26);
     transition: 0.5s;
+    border: 2px solid transparent;
 }
 
 .card-location:hover {
@@ -97,15 +122,15 @@ ul { list-style: none; }
 
 .text-title {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 30px;
     padding: 30px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .text-title h3 {
-    font-size: 2.0rem;
-    margin-bottom: 10px;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
 }
 
 .text-title p {
@@ -116,21 +141,115 @@ ul { list-style: none; }
 .card-location img {
     display: block;
     margin: 120px auto;
+    border-radius: 10px;
 }
 
 .text-box {
     position: absolute;
-    bottom: 0;
-    padding: 24px;
     /* padding-left: 150px; */
-    padding-bottom: 30px;
-    z-index: 2;
+    /* padding-bottom: 30px; */
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+}
+
+.text-box > h3 {
+    color: white;
+    font-size: 1.8rem;
+    line-height: 3;
+    display: block;
+    margin: 10px auto;
+}
+
+
+
+
+
+/* 여행전체크 - 박스 */
+#main_content > #check_content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 300px;
+}
+
+/* 배터리 그림 */
+#main_content > #check_content > #active_box {
+    width: 560px;
+    height: 727px;
+    /* background: black; */
+    display: inline-block;
+}
+
+#check_content {
+    width: 1440px;
+    overflow: hidden;
+    position: relative;
+}
+
+#check_content > #active_box {
     
 }
 
-.text-box h3 {
-    color: white;
-    font-size: 1.8rem;
-    line-height: 1.5;
+#check_content > #active_box img {
+    z-index: -1;
+    opacity: 0.4;
+    width: 500px;
+    height: 480px;
+    display: block;
+    margin: 23% auto;
 }
 
+
+
+#check_content .text {
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+    width: 600px;
+    height: 480px;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+
+.active {
+    font-size: 2.2rem;
+    padding: 6% 0;
+}
+
+
+
+/* 여행전확인 박스 _ */
+#check_container {
+    float: right;
+    display: block;
+}
+
+#check_container > #check_box {
+    width: 1300px;
+    height: 727px;
+    background: black;
+}
+
+
+#check_box h2 {
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+/* 배너슬라이드 부분 */
+#slide_aside > .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+#

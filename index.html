@@ -179,10 +179,9 @@
                                 <h3>해미읍성</h3>
                             </div>
                         </a>
-                    </div>
-                    
+                    </div> 
                 <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-scrollbar"></div>
             </div>
         </article>
 
@@ -191,60 +190,57 @@
             <!-- 배터리 그림_애니메이션 -->
             <div id="active_box">
                 <div>
-                    <img src="http://via.placeholder.com/560x727.png" alt="배터리 그림">
+                    <img src="./images/main/ev_img.png" alt="배터리 그림">
                 </div>
-                <!-- <div>
-                    <span class="active">
+                <div class="text">
+                    <p class="active">
                         적정량 충전 후 
-                        <br /> 자리를 양보해 주세요.
-                    </span>
-    
-                    <span class="active">
+                        <br /> 자리를 양보해 주세요.<br />
+                    </p>
+
+                    <p class="active">
                         충전 중 자리를 비우신다면, 
-                        <br /> 연락처를 남겨주세요.
-                    </span>
-    
-                    <span class="active">
+                        <br /> 연락처를 남겨주세요.<br />
+                    </p>
+                
+                    <p class="active">
                         떠나기 전, 
                         <br /> 케이블 정리는 깔끔하게!
-                    </span>
-                </div>                 -->
+                    </p> 
+                </div>                
             </div>
 
             <!-- 유튜브, 지도 링크 부분 -->
             <div id="check_container">
-                <div id="check box">
-                    <!-- <h2>여행 전 확인하세요</h2> -->
-                    <img src="http://via.placeholder.com/860x727.png?text=Check+it+out+before+traveling" alt="여행 전 확인하세요">
-                    <!-- <div class="charge">
-                        <a href="#" class="circle">
+                <div id="check_box">
+                    <h2>여행 전 확인하세요</h2>
+                    <div class="circle">
+                        <a href="#" class="charge">
                             <img src="" alt="유튜브로 통합니다.">
                             <span>충전 잔량 확인</span>
                         </a>
-                    </div> -->
+                    </div>
 
-                    <!-- <div class="map">
-                        <a href="#" class="circle">
+                    <div class="circle">
+                        <a href="#" class="map">
                             <img src="" alt="충전소 위치 확인 지도">
                             <span>충전소 위치 확인</span>
                         </a>
-                    </div> -->
+                    </div>
 
-                    <!-- <div class="socket">
-                        <a href="#" class="circle">
+                    <div class="circle">
+                        <a href="#" class="socket">
                             <img src="" alt="유튜브로 통합니다.">
                             <span>충전기 단자 확인</span>
                         </a>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </article>
 
         <!-- slide -->
         <aside id="slide_aside">
-            <div>
-                <img src="http://via.placeholder.com/1440x400.png" alt="슬라이드">
-            </div>
+            
         </aside>
 
         <!-- FAQ -->
@@ -322,15 +318,16 @@
 <script src="./js/jquery-3.6.0.min.js"></script>
 
 <script src="./js/header-gnb.js"></script>
+<script src="./js/banner_swiper.js"></script>
 <script src="./js/swiper.min.js"></script>
 
 <script>
         var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
+        slidesPerView: 3.5,
         spaceBetween: 32,
-        pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+        scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
         },
     });
 </script>
