@@ -65,10 +65,10 @@ ul { list-style: none; }
 /* 여행지역_카드부분 */
 
 #local_trip {
-    margin-top: 60px;
+    margin-top: 100px;
     /* text-align: center; */
     width: 1300px;
-    height: auto;
+    height: 800px;
     margin: 0 auto;
 }
 
@@ -225,30 +225,52 @@ ul { list-style: none; }
 #check_container {
     float: right;
     display: block;
+
 }
 
 #check_container h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    
 }
 
-#check_container > #check_box {
+#check_box {
+    position: relative;
     width: 1300px;
     height: 727px;
-    background: black;
+    text-align: center;
+    background: rgba(15, 76, 129, 0.6);
+    mix-blend-mode: screen;
+
+    /* 애니메이션 */
+    opacity: 0;
+    margin-right: -2000px;
+    max-width: 100%;
 }
 
+.circle {
+    float: left;
+    /* display: block; */
+    margin-top: 180px;
+    margin-left: 100px;
+}
 
+.circle img {
+    display: block;
+    margin: 20px auto;
+}
 
-
-
-
-
-
+.circle p {
+    font-size: large;
+}
 
 
 /* 배너슬라이드 부분 */
-#slide_aside > .swiper-container {
+#slide_aside > .swiper2 {
     width: 100%;
     height: 100%;
+    /* margin-bottom: 150px; */
 }
 
+
+
+/* FAQ */

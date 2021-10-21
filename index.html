@@ -95,7 +95,7 @@
         <!-- 국내여행지_slide -->
         <article id="local_trip">
             <h2>충전소가 있는 국내여행지</h2>
-            <div class="swiper-container">
+            <div class="swiper-container swiper1">
                 <div class="trip swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="#" class="card-location">
@@ -216,22 +216,22 @@
                 <div id="check_box">
                     <div class="circle">
                         <a href="#" class="charge">
-                            <img src="" alt="유튜브로 통합니다.">
-                            <span>충전 잔량 확인</span>
+                            <img src="./images/main/circle1.png" alt="유튜브로 통합니다.">
+                            <p>충전 잔량 확인</p>
                         </a>
                     </div>
 
                     <div class="circle">
                         <a href="#" class="map">
-                            <img src="" alt="충전소 위치 확인 지도">
-                            <span>충전소 위치 확인</span>
+                            <img src="./images/main/circle2.png" alt="충전소 위치 확인 지도">
+                            <p>충전소 위치 확인</p>
                         </a>
                     </div>
 
                     <div class="circle">
                         <a href="#" class="socket">
-                            <img src="" alt="유튜브로 통합니다.">
-                            <span>충전기 단자 확인</span>
+                            <img src="./images/main/circle3.png" alt="유튜브로 통합니다.">
+                            <p>충전기 단자 확인</p>
                         </a>
                     </div>
                 </div>
@@ -240,7 +240,24 @@
 
         <!-- slide -->
         <aside id="slide_aside">
-            
+            <div class="swiper-container swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/main/banner/banner01.png" alt="배너이미지1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/main/banner/banner02.png" alt="배너이미지2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/main/banner/banner01.png" alt="배너이미지1">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </aside>
 
         <!-- FAQ -->
@@ -317,19 +334,13 @@
 <script src="./js/jquery-2.2.4.min.js"></script>
 <script src="./js/jquery-3.6.0.min.js"></script>
 
-<script src="./js/header-gnb.js"></script>
-<script src="./js/banner_swiper.js"></script>
+<script src="./js/common.js"></script>
 <script src="./js/swiper.min.js"></script>
+<script src="./js/swiper_slide.js"></script>
+<script src="./js/checkbox.js"></script>
 
 <script>
-        var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3.5,
-        spaceBetween: 32,
-        scrollbar: {
-        el: '.swiper-scrollbar',
-        hide: false,
-        },
-    });
+        
 </script>
 
 </body>
