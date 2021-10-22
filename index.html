@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/main.css">
 
     <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="./css/animate.css"> -->
 
 </head>
 <body>
@@ -213,7 +214,7 @@
             <!-- 유튜브, 지도 링크 부분 -->
             <div id="check_container">
                 <h2>여행 전 확인하세요</h2>
-                <div id="check_box">
+                <div id="check_box" class="animate__animated animate__fadeInRight">
                     <div class="circle">
                         <a href="#" class="charge">
                             <img src="./images/main/circle1.png" alt="유튜브로 통합니다.">
@@ -262,67 +263,76 @@
 
         <!-- FAQ -->
         <article id="qna_content">
-            <div id="qna_container">
-                <img src="./images/main/icon/FAQ.png" alt="FAQ 아이콘">
-                <!-- only_pc -->
-                <div class="question">
-                    <a href="#" class="faq-card">
-                        <div class="faq-gradient"></div>
-                        <div class="text-box">
-                            <p>비 오는 날<br /> 충전하면<br /> 위험하지<br /> 않나요?</p>
-                        </div>
-                        <img src="./images/faq/faq1_ico.png" alt="비 오는 날 충전하면 위험하지 않나요?">
+            <div class="pna_container">
+                <div class="faq_ico">
+                    <img src="./images/main/icon/FAQ.png" alt="FAQ 아이콘">
                 </div>
-
-                <div class="question">
-                    <a href="#" class="faq-card">
-                        <div class="faq-gradient"></div>
-                        <div class="text-box">
-                            <p>비 오는 날<br /> 충전하면<br /> 위험하지<br /> 않나요?</p>
-                        </div>
-                        <img src="./images/faq/faq2_ico.png" alt="전기차 타고 물에 빠지면 감전되나요?">
+                <div class="question_box">
+                    <div class="faq-gradient"></div>
+                    <div class="question_text">
+                        <p>비 오는 날<br /> 충전하면<br /> 위험하지<br /> 않나요?</p>
+                    </div>
+                    <img src="./images/faq/faq1_ico.png" alt="비 오는 날 충전하면 위험하지 않나요?">
                 </div>
-
-                <div class="question">
-                    <a href="#" class="faq-card">
-                        <div class="faq-gradient"></div>
-                        <div class="text-box">
-                            <p>비 오는 날<br /> 충전하면<br /> 위험하지<br /> 않나요?</p>
-                        </div>
-                        <img src="./images/faq/faq3_ico.png" alt="충전 중 충전기를 뽑아버리면 어떻게 하나요?">
+        
+                <div class="question_box">
+                    <div class="faq-gradient"></div>
+                    <div class="question_text">
+                        <p>전기차 타고<br /> 물에 빠지면<br /> 감전되나요?</p>
+                    </div>
+                    <img src="./images/faq/faq2_ico.png" alt="전기차 타고 물에 빠지면 감전되나요?">
+                </div>
+        
+                <div class="question_box">
+                    <div class="faq-gradient"></div>
+                    <div class="question_text">
+                        <p>충전 중<br /> 충전기를<br /> 뽑아버리면<br /> 어떻게 하나요?</p>
+                    </div>
+                    <img src="./images/faq/faq3_ico.png" alt="충전 중 충전기를 뽑아버리면 어떻게 하나요?">
                 </div>
             </div>
         </article>
 
         <!-- 지구를 지키는 여행법 -->
-        
-        <aside id="eco wrap">
-            <div id="eco earth">
-                <!-- <img src="" alt="지구본이미지"> -->
+        <!-- pc only -->
+        <aside id="eco_wrap">
+            <div id="earth">
+                <img src="./images/main/earth.png" alt="지구본이미지">
                 <h2>지구를 지키는 여행방법</h2>
             </div>
-            <div id="eco trip">
-                <a href="#">
-                    <img src="http://via.placeholder.com/392x440.png" targer="_blank" alt="자전거 라이딩 코스. 두루누비 홈페이지로 연결됩니다.">
-                </a>
-                <a href="#">
-                    <img src="http://via.placeholder.com/392x440.png" alt="줍깅 캠페인 이미지">
-                </a>
-                <a href="#">
-                    <img src="http://via.placeholder.com/392x440.png" alt="친환경 여행 캠페인">
-                </a>
-            </div>
+        
+            <div id="eco_container">
+                <div class="eco_trip">
+                    <a href="#">
+                        <!-- <div class="card-gradient"></div> -->
+                    <img src="../images/main/eco_trip1.png" alt="자전거 라이딩 코스-두루누비 홈페이지로 연결됩니다.">
+                    </a>
+                </div>
+                
+                <div class="eco_trip">
+                    <!-- <div class="card-gradient"></div> -->
+                    <img src="../images/main/eco_trip2.png" alt="서산_slide">
+                </div>
+            
+                <div class="eco_trip">
+                    <!-- <div class="card-gradient"></div> -->
+                    <img src="../images/main/eco_trip3.png" alt="서산_slide">
+                </div>
+            </div>    
         </aside>
-    </section>
+
+
+
 
     <!-- top_button -->
-    <div>
-        <img src="./images/main/top.png" alt="상단으로 올라가는 버튼">
-    </div>
+    <a class="topBtn" href="#">
+        <img src="./images/main/topBtn.png" alt="상단버튼">
+    </a>
+</div>    
 
     <!-- 푸터 -->
     <footer id="main_footer">
-        <div id="footer_title">
+        <div class="footer_title">
             <a href="#">전기차와 함께하는 드라이브</a>
         </div>
 
@@ -330,32 +340,38 @@
             <div class="footer_logo">
                 <img src="./images/main/footer_logo.png" alt="전기차이미지">
             </div>
-            <a href="#">
-                <span>전기차 소개</span>
-                <span>전기차 충전소 위치</span>
-                <span>이용약관</span>
-                <span>개인정보처리방침</span>
-            </a>
+            <div class="line">
+                <a href="#">
+                    <span>전기차 소개 </span>
+                    <span>전기차 충전소 위치</span>
+                    <span>이용약관</span>
+                    <span>개인정보처리방침</span>
+                </a>
+            </div>
+            
         </div>
 
         <div>
-            <div>
+            <div class="copy">
                 COPYRIGHT ⓒ All rights RESERVED.
             </div>
         </div>
     </footer>
-</div>
+
 
 <script src="./js/jquery-2.2.4.min.js"></script>
 <script src="./js/jquery-3.6.0.min.js"></script>
 
 <script src="./js/common.js"></script>
 <script src="./js/swiper.min.js"></script>
+<!-- <script src="./js/wow.min.js"></script> -->
 <script src="./js/swiper_slide.js"></script>
 <script src="./js/checkbox.js"></script>
+<script src="./js/main.js"></script>
+
 
 <script>
-        
+    
 </script>
 
 </body>
