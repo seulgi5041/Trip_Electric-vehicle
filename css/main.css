@@ -29,6 +29,7 @@ ul { list-style: none; }
 
 /* 비디오 */
 #video_container {
+    /* max-width: 100%; */
     width: 100%;
     height: 1080px;
     overflow: hidden;
@@ -45,7 +46,7 @@ ul { list-style: none; }
 }
 
 #bg > .parallax {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;

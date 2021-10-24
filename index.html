@@ -13,12 +13,12 @@
 
 </head>
 <body>
-<div id="wrap">
+
     <!-- 헤더 -->
     <header id="main_header">
         <div class="gnb_container">
             <!-- gnb메뉴 -->
-            <div class="gnb menu">
+            <div class="gnb_menu">
                 <div class="logo">
                     <a href="#" class="electric_car">전기차와 함께하는 드라이브</a>
                 </div>
@@ -41,8 +41,12 @@
                 </div>
                 <!-- 반응형에서 나올 아이콘 -->
                 <div class="trigger">
-                    <a href="#" class="moblie hamburger">bar</a>
-                    <a href="#" class="moblie close">close</a>
+                    <a href="#" class="moblie hamburger">
+                        <img src="./images/main/icon/toggle_btn_m.png" alt="모바일_토글메뉴">
+                    </a>
+                    <!-- <a href="#" class="moblie close">
+                        <img src="./images/main/icon/toggle_btn_c.png" alt="모바일_토글 닫기 메뉴">
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -52,20 +56,20 @@
         <!-- 하단 lnb메뉴:hover -->
         <div class="lnb_container">
             <div class="lnb">
-                <ul>
+                <ul class="drodown1">
                     <li><a href="#" target="_blank">전기차 개요</a></li>
                     <li><a href="#" target="_blank">전기차 충전정보</a></li>
                 </ul>              
             </div>
             <div class="lnb">
-                <ul>
+                <ul class="drodown1">
                     <li><a href="#" target="_blank">시간을 달려</a></li>
                     <li><a href="#" target="_blank">푸르게 푸르게</a></li>
                     <li><a href="#" target="_blank">감성충만 #SNS</a></li>
                 </ul>
             </div>
             <div class="lnb">
-                <ul>
+                <ul class="drodown1">
                     <li><a href="https://www.ev.or.kr/evmonitor" target="_blank">전기차 충전소 모니터링</a></li>
                     <li><a href="https://evc.kepco.co.kr:4445/map/map.do" target="_blank">한국전력 전기차충전 서비스</a></li>
                 </ul>
@@ -87,9 +91,9 @@
         <article id="bg">
             <div class="parallax"></div>
             <div class="box_img">
-                <p>환경에 영향을 최소화 하며 떠나는 여행</p>
+                <!-- <p>환경에 영향을 최소화 하며 떠나는 여행</p>
                 <p>우리는 단순히 전기차를 운전하는 것이 아니라</p>
-                <p>우리의 삶과 사회를 지킬 수 있는 힘을 갖게 됩니다.</p>
+                <p>우리의 삶과 사회를 지킬 수 있는 힘을 갖게 됩니다.</p> -->
             </div>
         </article>
 
@@ -328,7 +332,7 @@
     <a class="topBtn" href="#">
         <img src="./images/main/topBtn.png" alt="상단버튼">
     </a>
-</div>    
+
 
     <!-- 푸터 -->
     <footer id="main_footer">
@@ -340,15 +344,12 @@
             <div class="footer_logo">
                 <img src="./images/main/footer_logo.png" alt="전기차이미지">
             </div>
-            <div class="line">
-                <a href="#">
-                    <span>전기차 소개 </span>
-                    <span>전기차 충전소 위치</span>
-                    <span>이용약관</span>
-                    <span>개인정보처리방침</span>
-                </a>
-            </div>
-            
+            <ul class="footer_menu">
+                <li><a href="#">전기차 소개</a></li>
+                <li><a href="#">전기차 충전소 위치</a></li>    
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+            </ul>           
         </div>
 
         <div>
@@ -368,6 +369,7 @@
 <script src="./js/swiper_slide.js"></script>
 <script src="./js/checkbox.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/lnb_responsive.js"></script>
 
 
 <script>
