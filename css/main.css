@@ -238,7 +238,8 @@ video {
     display: block;
     height: 727px;
     /* width:  */
-    max-width: 100%;
+    max-width: 1300px;
+    width: 100%;
 }
 
 #check_container h2 {
@@ -272,6 +273,7 @@ video {
 .circle img {
     display: block;
     margin: 20px auto;
+    width: 100%;
 }
 
 .circle p {
@@ -540,6 +542,11 @@ video {
         max-width: 100%;
         height: auto;
         
+    }
+
+    #check_container {
+        width: 100%;
+        display: block;
     }
 
     

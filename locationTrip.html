@@ -11,77 +11,26 @@
     <link rel="stylesheet" href="./css/swiper.min.css">
 </head>
 <body>
-
-
-
-    <!-- 첫 번째 Modal을 여는 클래스 -->
-    <h1 class="btn">MODAL_1</h1>
- 
-    <!-- 첫 번째 Modal -->
-    <div class="modal">
- 
-      <!-- 첫 번째 Modal의 내용 -->
-      <div class="modal-content">
-        <span class="close">&times;</span>                         
-        <p>첫 번째 Modal</p>
-      </div>
-    </div>
- 
-    <hr>
-    <!-- 두 번째 Modal을 여는 클래스 -->
-    <h1 class="btn">MODAL_2</h1>
- 
-    <!-- 두 번째 Modal -->
-    <div class="modal">
- 
-      <!-- 두 번째 Modal의 내용 -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>두 번째 Modal</p>
-      </div>
-    </div>
- 
-    <hr>
-    <!-- 세 번째 Modal을 여는 클래스 -->
-    <h1 class="btn">MODAL_3</h1>
- 
-    <!-- 세 번째 Modal -->
-    <div class="modal">
- 
-      <!-- 세 번째 Modal의 내용 -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>세 번째 Modal</p>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-    <!-- <div class="swiper1 swiper-container">
+    
+    <div class="swiper1 swiper-container">
         <div class="trip swiper-wrapper">
             <div class="swiper-slide">
-                <a href="#" class="card-location" id="modal_btn1">
-                    <div class="card-gradient"></div>
-                    <div class="text-title">
-                        <h3>서산</h3>
-                        <p>머드맥스 바로 그곳!</p>
-                    </div>
-                    <img src="./images/location/seosan1.png" alt="서산_slide">
-                    <div class="text-box">
-                        <h3>해미읍성</h3>
-                    </div>
-                </a>
+                    <a href="#" class="card-location btn">
+                        <div class="card-gradient"></div>
+                        <div class="text-title">
+                            <h3>서산</h3>
+                            <p>머드맥스 바로 그곳!</p>
+                        </div>
+                        <img src="./images/location/seosan1.png" alt="서산_slide">
+                        <div class="text-box">
+                            <h3>해미읍성</h3>
+                        </div>
+                    </a>               
             </div>
             
             <div class="swiper-slide">
-                <a href="#" class="card-location" id="modal_btn">
-                    <div class="card-gradient"></div>
+                <a href="#" class="card-location ">
+                    <div class="card-gradient btn"></div>
                     <div class="text-title">
                         <h3>순천</h3>
                         <p>갈대밭#인생샷</p>
@@ -94,7 +43,7 @@
             </div>
 
             <div class="swiper-slide">
-                <a href="#" class="card-location" id="modal_btn">
+                <a href="#" class="card-location btn">
                     <div class="card-gradient"></div>
                     <div class="text-title">
                         <h3>당진</h3>
@@ -108,7 +57,7 @@
             </div>
 
             <div class="swiper-slide">
-                <a href="#" class="card-location" id="modal_btn">
+                <a href="#" class="card-location btn">
                     <div class="card-gradient"></div>
                     <div class="text-title">
                         <h3>전주</h3>
@@ -122,7 +71,7 @@
             </div>
 
             <div class="swiper-slide">
-                <a href="#" class="card-location" id="modal_btn">
+                <a href="#" class="card-location btn">
                     <div class="card-gradient"></div>
                     <div class="text-title">
                         <h3>삼척</h3>
@@ -136,7 +85,7 @@
             </div>
 
             <div class="swiper-slide">
-                <a href="#" class="card-location" id="modal_btn">
+                <a href="#" class="card-location btn">
                     <div class="card-gradient"></div>
                     <div class="text-title">
                         <h3>서산</h3>
@@ -149,40 +98,45 @@
                 </a>
             </div> 
         <!-- Add Pagination -->
-        <!-- <div class="swiper-scrollbar-drag"></div>
-    </div> -->
+        <div class="swiper-scrollbar-drag"></div>
+    </div>
 
 
 
-    <!-- <button type='button' id="modal_btn">모달창아 나와랏</button> -->
-    <!-- <div class="black_bg"></div>
-    <div class="modal_wrap">
-        <div class="modal_close"><a href="#">close</a></div>
-        <div>
-        <img src="./images/location/location_box1.png" alt="서산여행코스">
+    <!-- 모달팝업부분 -->
+    <div class="black_bg"></div>
+    <div class="modal">
+        <div class="close"><a href="#">X</a></div>
+        <div class="content">
+            <img src="./images/location/location_box1.png" alt="서산여행코스">
         </div>
     <div>
 
 
     <div class="black_bg"></div>
-    <div class="modal_wrap">
-        <div class="modal_close"><a href="#">close</a></div>
-        <div>
-        <img src="./images/location/location_box2.png" alt="순천여행코스">
+    <div class="modal">
+        <div class="close"><a href="#">X</a></div>
+        <div class="content">
+            <img src="./images/location/location_box2.png" alt="순천여행코스">
         </div>
-    <div>  -->
+    <div>
+
+
+
+
+
 
         <script src="./js/jquery-2.2.4.min.js"></script>
-<script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/jquery-3.6.0.min.js"></script>
 
-<script src="./js/common.js"></script>
-<script src="./js/swiper.min.js"></script>
-<!-- <script src="./js/wow.min.js"></script> -->
-<script src="./js/swiper_slide.js"></script>
-<script src="./js/checkbox.js"></script>
-<script src="./js/main.js"></script>
-<script src="./js/lnb_responsive.js"></script>
-<script src="./js/locationTrip.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/swiper.min.js"></script>
+        <script src="./js/wow.min.js"></script>
+        <script src="./js/swiper_slide.js"></script>
+        <script src="./js/checkbox.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/lnb_responsive.js"></script>
+        <script src="./js/locationTrip.js"></script>
 
 </body>
 </html>
