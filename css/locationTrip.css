@@ -1,9 +1,11 @@
+
+
 .modal_wrap{
     display: none;
     width: 1380px;
-    height: 825px;
-    position: absolute;
-    top: 35%;
+    height: 820px;
+    position: relative;
+    top: 10%;
     left: 30%;
     margin: -250px 0 0 -250px;
     background:#F1F1F1;
