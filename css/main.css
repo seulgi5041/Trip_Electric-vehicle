@@ -33,8 +33,12 @@ ul { list-style: none; }
     /* top:0;
     left: 0;  */
     width: 100%;
-    margin: 0px auto;
-    
+    margin: 0px auto;   
+}
+
+video {
+    width: 100%;
+    height: auto;
 }
 
 /* 배경이미지 */
