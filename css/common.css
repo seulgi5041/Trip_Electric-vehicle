@@ -79,14 +79,11 @@ ul { list-style: none; }
 #main_header .nav > li {
     float: left;
     padding-right: 80px;
-    /* width: 220px; */
-    height: 139px;
-    /* display: block; */
     overflow: hidden;
     text-align: center;
 }
 
-#main_header .nav > li a {
+#main_header .nav > li > a {
     font-size: 2.0rem;
     font-weight: 800;
     padding: 10px 20px;
@@ -186,77 +183,39 @@ ul { list-style: none; }
     /* z-index: 2; */
 }
 
+/* lnb_하위메뉴 */
+ul.nav > li ul.lnb { display: none; }
 
-/* 하위 lnb메뉴 */
-#main_header > .lnb_container {
-    display: none;
-    height: 190px;
+ul.nav > li ul { 
     width: 100%;
-    position: fixed;
-    /* gnb_contanier-높이139px path-높이1px */
+    opacity: 0;
+}
+
+ul.nav > li ul.lnb{
+    position: absolute;
     top: 140px;
-    z-index: 1;
+    /* left: 0; */
 }
 
-#main_header > .lnb_container > .lnb {
-    overflow: hidden;
-    margin: 0 auto;
-    display: none;
-
-    float: left;
+ul.nav > li:hover ul {
+    opacity: 1;
 }
 
-#main_header > .lnb_container > .lnb ul {
-    padding : 0 30px;
-    margin-top: 30px;
+ul.nav > li ul.lnb li {
+    /* display: inline-block; */
+    text-align: left;
+    padding: 20px;
+    left: 30px;
 }
 
-.show {
-    display: block;
-}
-
-.hide {
-    display: none;
-}
-
-.appear {
-    animation: fade-in 0.5s;
-}
-
-.disappear {
-    animation: fade-out 0.5s;
-}
-
-@keyframes fade-in {
-    from {
-        /* 투명도지정 */
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fade-out {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-#main_header > .lnb_container > .lnb ul > li {
-    padding-bottom: 30px;
-}
-
-#main_header > .lnb_container > .lnb a {
+ul.nav > li ul.lnb li > a{
     font-size: 1.6rem;
+    font-weight: 700;
 }
 
-#main_header > .lnb_container > .lnb a:hover {
-    color: #BFFF00;
-}
+
+
+
 
 
 /* top버튼 */
