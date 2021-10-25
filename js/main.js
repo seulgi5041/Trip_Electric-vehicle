@@ -5,7 +5,7 @@ $(function (){
         // 250 넘으면 상단버튼 나옴
         if ($(this).scrollTop() > 250 ) {
             $(".topBtn").fadeIn();
-            $(".topBtn").css('up', $("#main_content").offset().up());
+            // $(".topBtn").css('up', $("#main_content").offset().up());
         }else {
             $(".topBtn").fadeOut();
         };
