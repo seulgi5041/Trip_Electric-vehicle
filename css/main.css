@@ -307,43 +307,74 @@ video {
 /* FAQ */
 
 #qna_content {
+    
     width: 1200px;
     margin: 0 auto;
     max-width: 100%;
 
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .pna_container {
     text-align: center;
     margin-top: 200px;
-    
+    height: 580px;
+    overflow: hidden;
 }
 
 .faq_ico {
     text-align: left;
     margin-left: 50px;
+    margin-bottom: 100px;
 }
 
 
-.question_box {
+.pna_container > .question_box {
     position: relative;
     border-radius: 8px;
     overflow: hidden;
     display: inline-block;
     margin: 10px;
     margin-left: 22px;
+    margin-bottom: -20px;
     width: 100%;
     max-width: 350px;
     height: 440px;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.26);
-    transition: 0.5s;
 }
 
+
 .question_box:hover {
-    transform: scale(0.95);
-    
+    -webkit-animation: slide-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+	        animation: slide-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+            animation-name: slide-top;
 }
+
+
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  
+
+
+
 
 .question_box img {
     position: absolute;
