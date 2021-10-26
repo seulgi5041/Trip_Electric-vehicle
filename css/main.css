@@ -47,6 +47,7 @@ video {
     top: -10px;
     height: 1070px;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 #bg > .parallax {
@@ -70,12 +71,12 @@ video {
 /* 여행지역_카드부분 */
 
 #local_trip {
-    margin-top: 100px;
+    margin-top: 150px;
     /* text-align: center; */
     width: 1300px;
     max-width: 100%;
     /* max-height: 100%; */
-    height: 800px;
+    /* height: 600px; */
     margin: 0 auto;
 }
 
@@ -200,28 +201,34 @@ video {
 }
 
 #check_content > #active_box {
-    
+    width: 30%;
+    position: absolute;
+    top: 150px;
 }
 
-#check_content > #active_box img {
+.charge_img {
+    width: 70%;
+}
+
+.charge_img img {
     z-index: -1;
     opacity: 0.4;
-    width: 500px;
+    max-width: 500px;
     height: 480px;
-    display: block;
-    margin: 23% auto;
 }
 
 
 
-#check_content .text {
+#active_box .text {
+    /* z-index: 1; */
     position: absolute;
-    top: 70px;
-    z-index: 1;
-    width: 600px;
-    height: 480px;
-    margin-top: 100px;
-    margin-left: 80px;
+    top: 0;
+    left: 80px;
+    /* padding-top: 80px; */
+}
+
+#active_box .text p{
+    padding-top: 80px;
 }
 
 
@@ -288,6 +295,13 @@ video {
     /* margin-bottom: 150px; */
 }
 
+#slide_aside > .swiper2 .pc_banner {
+    display: block;
+}
+
+#slide_aside > .swiper2 .moblie_banner {
+    display: none;
+}
 
 
 /* FAQ */
@@ -425,6 +439,22 @@ video {
 
 /* 미디어 쿼리 */
 @media screen and (max-width: 767px) {
+
+    #bg {
+        position: relative;
+        top: -10px;
+        height: 500px;
+        width: auto;
+        margin-bottom: 100px;
+    }
+
+    #bg > .parallax {
+        background-image: url("../images/main/m_bg1.png");
+        /* height: 50px; */
+        /* width: 100%; */
+    }
+
+
     .card-location img {
         max-width: 100%;
         margin: 30px 0;
@@ -463,11 +493,44 @@ video {
         font-size: 1.6rem;
     }
 
+
+    /* 여행가기 전 체크사항 */
+    #main_content > #check_content {
+        margin-bottom: 100px;
+        margin-top: 130px;
+    }
+
+    /* 슬라이드 */
+    #slide_aside > .swiper2 .pc_banner {
+        display: none;
+    }
+
+    #slide_aside > .swiper2 .moblie_banner {
+        display: block;
+        max-width: 767px;
+        width: 100%;    
+    }
+
+
+    /* FAQ */
+
+    #qna_content {
+        margin-bottom: 80px;
+    }
+
     .faq_ico img {
         display: block;
         margin: 0 auto;
     }
 
+
+
+
+    /* 지구를 지키는 여행법 */
+
+    #eco_wrap {
+        margin-bottom: 50px;
+    }
 
     #eco_wrap > #earth img {
         display: block;
@@ -486,6 +549,22 @@ video {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+    #bg {
+        position: relative;
+        top: -10px;
+        height: 800px;
+        width: auto;
+        margin-bottom: 100px;
+    }
+
+    #bg > .parallax {
+        background-image: url("../images/main/m_bg1.png");
+        /* height: 50px; */
+        /* width: 100%; */
+    }
+
     #check_content {
         width: 80vw;
     }
@@ -530,6 +609,8 @@ video {
         padding-top: 10px;
         /* display: inline-block; */
     }
+
+
 
 }
 

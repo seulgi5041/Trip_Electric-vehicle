@@ -32,21 +32,6 @@
 
 
 
-
-// <div class="popup modal1">
-//    <a href="#none" class="close">X</a>
-// 레이어팝업 1
-// </div>
-// <div class="popup modal2">
-//   <a href="#none" class="close">X</a>
-// 레이어팝업 2
-// </div>
-// <div class="popup modal3">
-//   <a href="#none" class="close">X</a>
-// 레이어팝업 3
-// </div>
-
-
 // Modal을 가져옵니다.
 var modals = document.getElementsByClassName("modal");
 // Modal을 띄우는 클래스 이름을 가져옵니다.
