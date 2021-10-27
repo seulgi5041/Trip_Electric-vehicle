@@ -162,9 +162,10 @@ ul { list-style: none; }
     height: 30px;
 }
 
-/* .trigger:paused{
-    
-} */
+#main_header .trigger .close img {
+    display: none;
+}
+
 
 
 /* 메뉴_bar */
@@ -394,9 +395,10 @@ footer .footer_menu li a {
     #main_header .gnb_menu .nav { display: none; }
     #main_header .sns_menu > ul { display: none; }
 
-    #main_header .trigger {
+    #main_header .trigger{
         display: block;
     }
+    
 
 
     #main_footer {
