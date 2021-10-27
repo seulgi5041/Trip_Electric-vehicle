@@ -25,11 +25,12 @@ ul { list-style: none; }
 #main_header {
     /* width: 100%; */
     position: relative;
-    
     max-width: 100%;
+    top: 0;
+
 }
 
-.gnb_container {
+#main_header > .gnb_container {
     position: fixed;
     z-index: 3;
     width: 100%;

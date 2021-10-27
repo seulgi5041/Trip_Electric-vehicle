@@ -3,6 +3,7 @@
             var scroll = $(window).scrollTop();
             if (scroll > 700) {
                 $("#main_header > .gnb_container").css("background" , "rgba(15,76,129,0.8)");
+                $("#main_header > .gnb_container").css("z-index", "2");
             } else{
             $("#main_header > .gnb_container").css("background" , "rgba(0,0,0,0)");   
             };
