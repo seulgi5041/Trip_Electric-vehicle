@@ -403,7 +403,7 @@ footer .footer_menu li a {
 
 
     #main_footer {
-        max-width: 767px;
+        max-width: 100%;
         height: auto;
     }
 

@@ -30,7 +30,7 @@ ul { list-style: none; }
 #faq_main {
     position: relative;
     height: auto;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -43,7 +43,7 @@ ul { list-style: none; }
     margin-bottom: 50px;
     padding-top: 140px;
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 
 #title_box h1 {
@@ -95,9 +95,8 @@ ul { list-style: none; }
     /* padding-left: 80px; */
 }
 
-#moricon{
+#moreicon{
     margin: 0 auto;
-    max-width: 100%;
 }
 
 .hvr-icon {
@@ -132,7 +131,7 @@ ul { list-style: none; }
 
 @media screen and (max-width: 767px) {
     #title_box {
-        max-width: 767px;
+        width: 100%;
     }
 
     #title_box h1 {
@@ -141,17 +140,17 @@ ul { list-style: none; }
     }
 
     .qna_container {
-        max-width: 767px;
-        margin: 0 auto;
+        width: 100%;
+        /* display: block; */
+        
     }
 
     .question_box {
-        position: relative;
-        display: block;
+        margin: 0 auto;
         max-width: 280px;
         width: 100%;
         height: 330px;
-        margin: 5px;
+        margin: 5px 0;
     }
 
     .question_box img {
@@ -162,15 +161,21 @@ ul { list-style: none; }
         font-size: 1.7rem;
     }
 
-    #moricon {
-        max-width: 767px;
+    #moreicon img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .hvr-icon {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     #title_box {
-        width: 80%;
+        width: 100%;
     }
 
     #title_box h1 {
@@ -180,7 +185,8 @@ ul { list-style: none; }
     }
 
     .qna_container {
-        max-width: 80%;
+        max-width: 767px;
+        width: 100%;
     }
 
     .question_box {
@@ -198,19 +204,23 @@ ul { list-style: none; }
         font-size: 1.9rem;
     }
 
-    .#more_ico {
-        max-width: 800px;
+    #moreicon{
+        /* margin: 0 auto; */
+        width: 100%;
     }
 
-    .#more_ico img {
-        width: ;
+    .hvr-icon {
+        max-width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
+    
     
 }
 
 @media screen and (min-width: 1024px) {
     #title_box {
-        width: 100%;
+        max-width: 100%;
     }
 
     .qna_container {

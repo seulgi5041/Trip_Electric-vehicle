@@ -14,39 +14,45 @@ a {
     text-decoration: none !important; 
     /* color: #0F4C81; */
 }
+td{color: #000;}
 img { border: 0; }
 ul { list-style: none; }
 
 
 
-#main_header {
+#main_header > .gnb_container {
     height: 139px;
     background: #0F4C81;
 }
 
 
+
 /* aside */
-#info_meun {
+#info_menu {
+    /* width: 400px; */
     position: fixed;
-    width: 300px;
-    height: 600px;
-    display: block;
+    overflow: auto;
+    height: 100%;
+    top: 300px;
+    left: 50px;
 }
 
-#info_menu > .info {
-    position: absolute;
-    top: 150px;
-    left: 150px;
+.info {
+    max-width: 180px;
+    width: 100%;
+    /* top: 150px; */
+    /* left: 150px; */
+    
 }
 
-#info_menu > .info h2 {
+.info h2 {
     font-size: 2.3rem;
     font-weight: 800;
     background: #0F4C81;
     padding: 10px 20px;
 }
 
-#info_menu > .info a {
+.info a {
     display: block;
     padding: 20px 0;
     padding-left: 15px;
@@ -55,31 +61,347 @@ ul { list-style: none; }
     color: #000;
 }
 
-#info_menu > .info a:hover {
+.info a:hover {
     color: #0F4C81;
 }
 
 
 /* 메인 */
 #info_main {
-
-    width: 960px;
-    /* height: 1440px; */
-    margin: 0 auto;
+    margin-left: 440px;
 }
 
-.infban {
-    margin-top: 0;
-}
-
-.info img {
+#info_main > .info_container {
+    max-width: 960px;
     width: 100%;
-    height: 100%;
+    height: 2300px;
+    position: relative;
 }
 
 
-@media screen and (max-width: 767px) {}
+.info_container > .infban {
+    max-width: 960px;
+    width: 100%;
+    position: relative;
+    height: 140px;
+}
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
+#info_main > .info_container > .infban img {
+    position: absolute;
+    top: 140px;
+}
 
-@media screen and (min-width: 1024px) {}
+.info_container > .info {
+    position: absolute;
+    top: 140px;
+    max-width: 960px;
+    width: 100%;
+}
+
+.info .info_title {
+    position: relative;
+    height: 30px;
+    top: 200px;
+}
+
+.info .info_title .bar {
+    width: 7px;
+    height: 27px;
+    background: #0F4C81;
+    display: inline-block;
+}
+
+.info .info_title h3 {
+    font-size: 2.0rem;
+    color: #000;
+    display: inline-block;
+    height: 27px;
+    position: absolute;
+    padding-left: 5px;
+}
+
+.info .info_title p {
+    font-size: 1.8rem;
+    color: #000;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+
+.info .car1 {
+    position: relative;
+    top: 200px;
+    width: 100%;
+    max-width: 960px;
+    margin-top: 100px;
+    
+    overflow: hidden;
+    
+}
+
+.info .selc {
+    margin-top: 50px;
+}
+
+.info .car1 img {
+    max-width: 100%;
+    height: auto;
+    padding-right: 10px;
+
+    float: left;
+    display: block;
+}
+
+.info .car1 p {
+    color: #000;
+    font-size: 1.3rem;
+    padding-top: 20px;
+}
+
+.info .car1 p:first-child {
+    padding-top: 70px;
+}
+
+.info .car1 .sub1:last-child {
+    margin-top: 126px;
+}
+
+.charge_table {
+    float: left;
+
+    margin-left: 15px;
+}
+
+
+.info .car1 .sub1_2 {
+    margin-left: 400px;
+}
+
+.info .car1 .sub1 p {
+    padding-left: 6px;
+}
+
+/* .info .car1 .sub1_2 p {
+    padding-top: 25px;
+} */
+
+.info .car1 .sub1 .citation {
+    color: #6B6B6B;
+    font-size: 1.0rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: right;
+    padding-top: 50px;
+}
+
+
+.info .info_title:last-child {
+    margin-top: 80px;
+}
+
+.info .info_title .char {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.info .info_title .char h4 {
+    font-size: 1.6rem;
+    padding-left: 15px;
+}
+
+.info .info_title .char p {
+    font-size: 1.6rem;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    #info_menu {
+        top: 150px;
+        left: 20px;
+    }
+    
+    .info {
+        width: 100%;
+    }
+
+    .info h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 8px 10px;
+    }
+    
+    .info a {
+        padding: 16px 0;
+        padding-left: 13px;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    #info_main {
+        margin-left: 160px;
+    }
+
+    #info_main > .info_container {
+        max-width: 100%;
+        height: 1800px;
+    }
+
+    #info_main > .info_container > .infban img {
+        width: 100%;
+    }
+
+    .info .info_title {
+        top: 100px;
+    }
+
+    .info .info_title p {
+        font-size: 1.3rem;
+    }
+
+    .info .car1 {
+        top: 80px;
+    }
+
+    .info .car1 img {
+        width: 25%;
+    }
+
+    .info .car1 p {
+        font-size: 1.0rem;
+        padding-top: 5px;
+    }
+    
+
+    .info .car1 p:first-child {
+        padding-top: 20px;
+    }
+    
+    .info .car1 .sub1:last-child {
+        margin-top: 20px;
+    }
+    
+    .info .car1 .sub1_2 {
+        margin-left: 0;
+    }
+
+    .info .car1 .sub1 p {
+        padding-left: 0;
+    }
+    
+    .info .car1 .sub1 .citation {
+        color: #6B6B6B;
+        font-weight: 700;
+        font-style: italic;
+        text-align: right;
+        padding-top: 30px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #info_menu {
+        top: 150px;
+        left: 20px;
+    }
+    
+    .info {
+        width: 100%;
+    }
+
+    .info h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 8px 16px;
+    }
+    
+    .info a {
+        padding: 16px 0;
+        padding-left: 13px;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    #info_main {
+        margin-left: 220px;
+    }
+
+    #info_main > .info_container {
+        max-width: 100%;
+        height: 2100px;
+    }
+
+    #info_main > .info_container {
+        max-width: 100%;
+    }
+    
+    #info_main > .info_container > .infban {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #info_main > .info_container > .infban img {
+        width: 80%;
+    }
+
+    .info .info_title {
+        /* top: 150px; */
+    }
+
+    .info .info_title p {
+        font-size: 1.6rem;
+    }
+
+    .info .car1 {
+        top : 190px;
+    }
+    .info .car1 img {
+        width: 40%;
+    }
+
+    .info .car1 p {
+        font-size: 1.0rem;
+        padding-top: 10px;
+    }
+    
+    .info .car1 p:first-child {
+        padding-top: 70px;
+    }
+    
+    .info .car1 .sub1:last-child {
+        margin-top: 80px;
+    }
+    
+
+    .info .car1 .sub1_2 {
+        margin-left: 0;
+    }
+
+    .info .car1 .sub1 p {
+        padding-left: 6px;
+    }
+    
+    .info .car1 .sub1 .citation {
+        color: #6B6B6B;
+        font-weight: 700;
+        font-style: italic;
+        text-align: right;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    #info_main > .info_container > .infban img {
+        width: 100%;
+    }
+
+    #info_main > .info_container > .infban img {
+        width: 100%;
+        height: auto;
+    }
+}

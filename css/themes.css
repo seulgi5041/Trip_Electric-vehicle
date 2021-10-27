@@ -4,24 +4,36 @@
 
 /* 헤더, 푸더 고정 */
 
-/* #header, #footer{
+#main_header{
     position:fixed;
-    height: 50px;
+    height: 139px;
     display:block;
     width: 100%;
-    background: #333;
+    background: #0F4C81;
     z-index:9;
     text-align:center;
     color: #f2f2f2;
-    padding: 20px 0 0 0;
+    padding: 0;
 }
 
-#header{
+/* #main_footer{
+    position:fixed;
+    height: 139px;
+    display:block;
+    width: 100%;
+    background: #0F4C81;
+    z-index:9;
+    text-align:center;
+    color: #f2f2f2;
+    padding: 0;
+} */
+
+#main_header{
     top:0px;
 }
-#footer{
+#main_footer{
     bottom:0px;
-} */
+}
 
 
 
@@ -31,6 +43,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: auto;
 }
 
 #section1 {
@@ -48,24 +61,26 @@
 }
 
 .intro {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
     /* Style for our header texts
 * --------------------------------------- */
-.title {
-    /* height: 120px; */
+.intro_title {
+    width: 100%;
+    max-width: 960px;
     text-align: center;
     margin: 10px;
 }
-.title h3{
+.intro_title h3{
     font-size: 1.8rem;
     font-weight: 900;
     color: #0F4C81;
     margin:0;
 }
-.title p{
+.intro_title p{
     font-size: 1.0rem;
     color: #0F4C81;
 }
@@ -75,6 +90,7 @@
 /* 첫번째 페이지 설정 */
 
 .themes_container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -85,6 +101,8 @@
 }
 
 .themes_box img {
+    width: 260px;
+    max-width: 100%;
     margin: 10px 16px;
 }
 
@@ -234,8 +252,73 @@ figure.location.hover figcaption {
 
 
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
+    .themes_container {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .themes_box {
+        display: inline-block;
+        text-align: center;
+        width: 40%;
+    }
 
-@media screen and (min-width: 1024px) {}
+    .themes_box img {
+        width: 90%;
+        margin: 3px 8px;
+    }
+        
+    .intro_title {
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .themes_container {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .themes_box {
+        /* display: block; */
+        text-align: center;
+        width: 80%;
+    }
+    
+    .themes_box img {
+        width: 90%;
+        margin: 10px 8px;
+    }
+
+    .intro_title {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .themes_container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .themes_box {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .themes_box img {
+        width: 260px;
+        max-width: 100%;
+        margin: 10px 16px;
+}
+
+.intro_title {
+    width: 100%;
+}
+
+}

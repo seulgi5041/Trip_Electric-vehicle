@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>전기차 소개-전기차 충전정보</title>
+    <title>전기차 소개-충전정보</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/info.css">
+    <link rel="stylesheet" href="../css/table.css">
 </head>
 <body>
-
-     <!-- 헤더 -->
-     <header id="main_header">
+    
+    <!-- 헤더 -->
+    <header id="main_header">
         <div class="gnb_container">
             <!-- gnb메뉴 -->
             <div class="gnb_menu">
@@ -54,10 +55,10 @@
                 <!-- 반응형에서 나올 아이콘 -->
                 <div class="trigger">
                     <a href="#" class="moblie hamburger">
-                        <img src="./images/main/icon/toggle_btn_m.png" alt="모바일_토글메뉴">
+                        <img src="../images/main/icon/toggle_btn_m.png" alt="모바일_토글메뉴">
                     </a>
                     <a href="#" class="moblie close">
-                        <img src="./images/main/icon/toggle_btn_c.png" alt="모바일_토글 닫기 메뉴">
+                        <img src="../images/main/icon/toggle_btn_c.png" alt="모바일_토글 닫기 메뉴">
                     </a>
                 </div>
             </div>
@@ -66,7 +67,7 @@
         <div class="path"></div>
         
     </header>
-    
+
     <!-- 어사이드네브 -->
     <aside id="info_menu">
         <div class="info">
@@ -79,17 +80,73 @@
     <section id="info_main">
         <article class="info_container">
             <div class="infban">
-                <img src="../images/info/page1-2banner.png" alt="전기차충전정보_배너">
+                <img src="../images/info/page1-2banner.png" alt="전기차 충전정보_배너">
             </div>
+
             <div class="info">
-                <img src="../images/info/page1-2.png" alt="전기차 충전정보">
+                <div class="info_title">
+                    <div class="bar"></div>
+                    <h3>전기차 충전방식 (급속/완속/이동형)</h3>
+                    <p>전기차는 고전압 배터리에서 전기에너지를 전기모터로 공급하여 구동력을 발생시키는 차량으로, <br /> 
+                        화석연료를 전혀 사용하지 않는 무공해 차량입니다.</p>
+                </div>
+                <div class="car1">
+                    <img src="../images/info/charge_info.png" alt="전기차의 충전방식">
+                    <table class="charge_table">
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>용량</th>
+                                <th>충전전압</th>
+                                <th>시간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>급속</th>
+                                <td>50~100kW</td>
+                                <td>450VDC</td>
+                                <td>30~60분</td>
+                            </tr>
+                            <tr>
+                                <th>완속</th>
+                                <td>7kW</td>
+                                <td>220VDC</td>
+                                <td>6시간</td>
+                            </tr>
+                            <tr>
+                                <th>이동형</th>
+                                <td>3.2kW</td>
+                                <td>220VDC</td>
+                                <td>8~9시간</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                    <div class="sub1 sub1_2">
+                        <p>급 속  : 충전기에서 직류전력을 변환하여 EV 배터리에 직접 충전</p>
+                        <p>완 속  : 차량 내부 OBC에서(교류직류)하여 배터리에 충전</p>
+                        <p>이동형 : 별도의 충전기 설치 없이 기존에 설치된 220V 콘센트를 활용하여 충전</p>
+                        <p class="citation">OBC : 완속 충전 시 교류(AC)를 직류(DC)전원으로 변환화여 충전시키는 장치</p>
+                    </div>                   
+                </div>
+            
+
+                <div class="info_title">
+                    <div class="bar"></div>
+                    <h3>차량별 충전단자</h3>
+                </div>
+                <div class="car1">
+                    <img src="../images/info/socket_info.png" alt="차량별 충전단자">
+                </div>
+        
             </div>
         </article>
     </section>
 
     <!-- top_button -->
     <a class="topBtn" href="#">
-        <img src="./images/main/topBtn.png" alt="상단버튼">
+        <img src="../images/main/topBtn.png" alt="상단버튼">
     </a>
 
     <!-- 푸터 -->
