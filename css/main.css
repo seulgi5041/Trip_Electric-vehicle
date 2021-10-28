@@ -96,9 +96,9 @@ video {
     text-align: center;
 }
 
-.swiper-slide:first-child {
+/* .swiper-slide:first-child {
     
-}
+} */
 
 
 .card-location {
@@ -353,25 +353,25 @@ video {
 
 @-webkit-keyframes slide-top {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
     100% {
-      -webkit-transform: translateY(-100px);
-              transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+                transform: translateY(-100px);
     }
-  }
-  @keyframes slide-top {
+}
+@keyframes slide-top {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
     100% {
-      -webkit-transform: translateY(-100px);
-              transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+                transform: translateY(-100px);
     }
-  }
-  
+}
+
 
 
 
@@ -549,6 +549,18 @@ video {
         margin-bottom: 80px;
     }
 
+    .pna_container {
+        height: 530px;
+    }
+
+    .pna_container > .question_box {
+        width: 70%;
+    }
+
+    .faq_ico {
+        margin-bottom: 70px;
+    }
+
     .faq_ico img {
         display: block;
         margin: 0 auto;
@@ -560,7 +572,7 @@ video {
     /* 지구를 지키는 여행법 */
 
     #eco_wrap {
-        margin-bottom: 50px;
+        margin-bottom: 0;
     }
 
     #eco_wrap > #earth img {
@@ -575,7 +587,19 @@ video {
     #eco_container > .eco_trip:nth-child(2) { display: none; }
     #eco_container > .eco_trip:nth-child(3) { display: none; }
 
-
+    .eco_trip {
+        height: 300px;
+    }
+    
+    .eco_trip img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .eco_trip img {
+        width: 80%;
+    }
 
 }
 
@@ -646,9 +670,9 @@ video {
 }
 
 @media screen and (min-width: 1024px) {
-    #local_trip {
-        /* width: 90vw; */
-    }
+    /* #local_trip {
+
+    } */
 
     .card-location img {
         max-width: 100%;
@@ -661,11 +685,6 @@ video {
         display: block;
     }
 
-    
 
-    
-
-
-    
 
 }
