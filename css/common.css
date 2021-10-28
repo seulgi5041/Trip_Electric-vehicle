@@ -336,7 +336,7 @@ footer .footer_menu li a {
     }
 
     .gnb_menu{
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     #main_header .logo {
@@ -346,7 +346,7 @@ footer .footer_menu li a {
     #main_header .logo a {
         width: 90px;
         height: 30px;
-        margin-top: 50px;
+        margin-top: 26px;
     }
 
     #main_header .nav > li {
