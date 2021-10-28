@@ -274,18 +274,23 @@ figure.location.hover figcaption {
         width: 90%;
     }
 
+
+    figure.location {
+        min-width: 110px;
+    }
+
     figure.location .title {
         padding: 5px 10px 10px;
     }
 
     figure.location h2 {
         font-size: 0.9rem;
-        margin: 8px 0;
+        margin: 2px 0;
     }
 
     figure.location h4 {
         font-size: 0.6rem;
-        margin: 11px 0;
+        margin: 2px 0;
     }
 
 }
