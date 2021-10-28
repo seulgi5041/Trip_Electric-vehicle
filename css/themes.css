@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
-
+html { 
+    font-size:62.5%;
+    background-color: rgba(0, 0, 0, 0) !important;
+    /* color: #0F4C81; */
+}
 
 /* 헤더, 푸더 고정 */
 
@@ -64,6 +68,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    height: 969px;
 }
 
     /* Style for our header texts
@@ -96,8 +101,15 @@
 }
 
 .themes_box {
-    display: inline-block;
+    /* display: inline-block; */
+    position: relative;
+    /* 집 가서 수정할것 */
+    top: 140px;
     text-align: center;
+}
+
+.themes_box:first-child {
+    top: 140px;
 }
 
 .themes_box img {
@@ -254,15 +266,22 @@ figure.location.hover figcaption {
 
 @media screen and (max-width: 767px) {
 
+    .intro {
+        height: auto;
+    }
+
     .themes_container {
         width: 100%;
         text-align: center;
+        overflow: hidden;
+        
     }
     
     .themes_box {
         display: inline-block;
         text-align: center;
         width: 40%;
+        
     }
 
     .themes_box img {
@@ -296,6 +315,10 @@ figure.location.hover figcaption {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .intro {
+        height: auto;
+    }
 
     .themes_container {
         width: 100%;
