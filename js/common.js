@@ -1,3 +1,5 @@
+
+// 일정 스크롤 넘으면 헤더 gnb부분 색 나옴
 $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
@@ -10,6 +12,7 @@ $(document).ready(function(){
     });
 });
 
+// 일정 스크롤 넘으면 헤더 gnb아래 선 색 나옴
 $(document).ready(function(){
     $(window).scroll(function(){
         var scroll_path = $(window).scrollTop();
@@ -22,3 +25,5 @@ $(document).ready(function(){
         };
     });
 });
+
+

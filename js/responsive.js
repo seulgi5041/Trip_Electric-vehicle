@@ -1,3 +1,5 @@
+
+// gnb메뉴 누르면 서브 lnb메뉴 나옴
 $(function(){
     $(".nav li").mouseenter(function(){
         $(this).children("ul").show();
