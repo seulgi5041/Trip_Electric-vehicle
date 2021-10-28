@@ -50,6 +50,7 @@ ul { list-style: none; }
     font-weight: 800;
     background: #0F4C81;
     padding: 10px 20px;
+    color: #fff;
 }
 
 .info a {
