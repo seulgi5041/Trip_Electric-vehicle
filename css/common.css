@@ -384,12 +384,17 @@ footer .footer_menu li a {
 
 /* 미디어 쿼리 */
 @media screen and (max-width: 767px) {
+
+    #main_header > .gnb_container {
+        height: 100px;
+    }
+
     .path {
         position: fixed;
         width: 100%;
         height: 1px;
         background: #BFFF00;
-        top: 139px;
+        top: 101px;
     }
 
     .logo a.electric_car {        
@@ -404,6 +409,15 @@ footer .footer_menu li a {
         display: block;
     }
     
+
+    .topBtn {
+        right: -15px;
+    }
+
+    .topBtn img {
+        width: 50%;
+    }
+
 
 
     #main_footer {
@@ -500,6 +514,9 @@ footer .footer_menu li a {
 
 @media screen and (min-width: 910px) and (max-width: 1023px) {
     
+    
+
+
     .gnb_menu {
         width: 90vw;
         margin-left: 50px;

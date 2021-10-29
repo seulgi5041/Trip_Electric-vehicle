@@ -74,8 +74,6 @@ html {
     /* Style for our header texts
 * --------------------------------------- */
 .intro_title {
-    width: 100%;
-    max-width: 960px;
     text-align: center;
     margin: 10px;
 }
@@ -115,7 +113,6 @@ html {
 .themes_box img {
     width: 260px;
     max-width: 100%;
-    margin: 10px 16px;
 }
 
 .themes_box:last-child {
@@ -213,7 +210,7 @@ figure.location h2 {
 }
 figure.location h4 {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 800;
     background-color: #ffffff;
     padding: 5px 10px;
@@ -264,6 +261,10 @@ figure.location.hover figcaption {
 
 
 
+
+
+
+/* 미디어 쿼리 */
 @media screen and (max-width: 767px) {
 
     .intro {
@@ -280,37 +281,30 @@ figure.location.hover figcaption {
     .themes_box {
         display: inline-block;
         text-align: center;
-        width: 40%;
         
     }
-
-    .themes_box img {
-        width: 90%;
-        margin: 3px 8px;
-    }
-        
-    .intro_title {
-        width: 90%;
-    }
-
 
     figure.location {
-        min-width: 110px;
-    }
-
-    figure.location .title {
-        padding: 5px 10px 10px;
+        display: block;
+        min-width: 170px;
+        max-width: 200px;
+        margin: 10px;
     }
 
     figure.location h2 {
-        font-size: 0.9rem;
-        margin: 2px 0;
+        font-weight: 300;
+        font-size: 1.8rem;
+    }
+    figure.location h4 {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 800;
+        background-color: #ffffff;
+        padding: 5px 10px;
+        color: #000000;
     }
 
-    figure.location h4 {
-        font-size: 0.6rem;
-        margin: 2px 0;
-    }
+
 
 }
 
@@ -324,22 +318,19 @@ figure.location.hover figcaption {
         width: 100%;
         text-align: center;
     }
-    
-    .themes_box {
-        /* display: block; */
-        text-align: center;
-        width: 80%;
-    }
-    
-    .themes_box img {
-        width: 90%;
-        margin: 10px 8px;
-    }
 
-    .intro_title {
-        width: 100%;
+    figure.location h2 {
+        font-weight: 400;
     }
-
+    figure.location h4 {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 800;
+        background-color: #ffffff;
+        padding: 5px 10px;
+        color: #000000;
+    }
+    
 }
 
 @media screen and (min-width: 1024px) {
@@ -353,14 +344,5 @@ figure.location.hover figcaption {
         text-align: center;
     }
     
-    .themes_box img {
-        width: 260px;
-        max-width: 100%;
-        margin: 10px 16px;
-}
-
-.intro_title {
-    width: 100%;
-}
 
 }
