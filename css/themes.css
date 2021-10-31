@@ -10,15 +10,19 @@ html {
 
 #main_header{
     position:fixed;
-    height: 139px;
     display:block;
     width: 100%;
-    background: #0F4C81;
     z-index:9;
     text-align:center;
-    color: #f2f2f2;
     padding: 0;
 }
+
+.gnb_container {
+    height: 139px;
+    background: rgba(15,76,129,0.8) !important;
+}
+
+.path { z-index: 2; }
 
 /* #main_footer{
     position:fixed;
