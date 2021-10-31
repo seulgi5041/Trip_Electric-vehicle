@@ -122,6 +122,11 @@ html {
 
 
 
+.hidden_quesion_box {
+    display: none;
+}
+
+
 
 @media screen and (max-width: 767px) {
     #title_box {

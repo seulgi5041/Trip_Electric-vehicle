@@ -298,8 +298,8 @@ video {
 
 .pna_container {
     text-align: center;
-    margin-top: 200px;
-    height: 580px;
+    margin-top: 220px;
+    height: 550px;
     overflow: hidden;
 }
 
@@ -317,7 +317,7 @@ video {
     display: inline-block;
     margin: 10px;
     margin-left: 22px;
-    margin-bottom: -20px;
+    margin-bottom: -40px;
     width: 100%;
     max-width: 350px;
     height: 440px;
@@ -357,8 +357,9 @@ video {
 
 .question_box img {
     position: absolute;
-    bottom: 10px;
-    right: 85px;
+    bottom: 0;
+    right: 65px;
+    color: #0F4C81;
 }
 
 /* .faq-gradient {
@@ -530,27 +531,33 @@ video {
     }
 
     .pna_container {
-        height: 530px;
-    }
-
-    .pna_container > .question_box {
-        width: 70%;
-    }
-
-    .question_box img {
-        width: 100px;
-        height: 100px;
-        right: 65px;
+        height: 430px;
     }
 
     .faq_ico {
-        margin-bottom: 70px;
+        /* margin-bottom: 90px; */
     }
 
     .faq_ico img {
+        width: 70px;
+        height: 70px;
         display: block;
         margin: 0 auto;
     }
+
+    .pna_container > .question_box {
+        width: 100%;
+        max-width: 230px;
+        height: 330px;
+    }
+
+    .question_box img {
+        width: 160px;
+        height: 160px;
+        right: 40px;
+    }
+
+    
 
 
 
@@ -656,22 +663,8 @@ video {
 
 }
 
-@media screen and (min-width: 1024px) {
-    /* #local_trip {
-
-    } */
-
-    .card-location img {
-        max-width: 100%;
-        height: auto;
-        
-    }
-
-    #check_container {
-        width: 100%;
-        display: block;
-    }
+/* @media screen (min-width: 1024px) and (max-width: 1440px) {
+    
 
 
-
-}
+} */
