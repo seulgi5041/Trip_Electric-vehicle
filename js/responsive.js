@@ -80,10 +80,14 @@ $(function(){
 
 
                 var nav = $(".nav").clone();
+                var sns = $(".sns").clone();
                 //복제한 nav를 넣어서 id값이 모바일메뉴인 아이에 덧붙여준다.
                 $("#mobile_menu").append(nav);
                 $("#mobile_menu").show();
-                
+                $("#mobile_menu").css("background-color:","#0F4C81");
+                $("#mobile_menu").append(sns);
+                $("#mobile_menu").show();
+                $("#mobile_menu").css("background-color:","#0F4C81");
                 
             } else {
                 // 닫기 메뉴 버튼이 보일때

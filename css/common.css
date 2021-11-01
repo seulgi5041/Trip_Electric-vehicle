@@ -207,11 +207,11 @@ ul { list-style: none; }
 }
 
 #main_header > .lnb_container .lnb .drodown2 {
-    margin-left: 70px;
+    margin-left: 60px;
 }
 
 #main_header > .lnb_container .lnb .drodown4 {
-    margin-left: 240px;
+    margin-left: 210px;
 }
 
 
@@ -267,7 +267,80 @@ ul { list-style: none; }
 
 
 
+/* 모바일 메뉴(기본 CSS) */
+#mobile_menu {
+    /* background-color: #0F4C81; */
+    position: relative;
+    top: 100px;
+}
 
+#mobile_menu .nav {
+    top: 40px;
+    padding: 20px;
+}
+
+#mobile_menu .nav li {
+    padding: 20px 30px;
+}
+
+#mobile_menu .nav li a {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+#mobile_menu .nav li a:hover {
+    color: #BFFF00;
+}
+
+
+
+#mobile_menu .sns {
+
+    position: relative;
+    top: 60px;
+    padding: 20px;
+    
+    width: 100%;
+    max-width: 320px;
+    overflow: hidden;
+    
+}
+
+#mobile_menu .sns li {
+    float: left;
+
+    padding: 10px;
+}
+
+#mobile_menu .sns li a {
+    display: block;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    text-indent: -99999em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+#mobile_menu .sns li a.facebook {
+    background-image: url(../images/main/ico_facebook.png);
+}
+#mobile_menu .sns li a.youtube {
+    background-image: url(../images/main/ico_youtube.png);
+}
+#mobile_menu .sns li a.instagram {
+    background-image: url(../images/main/ico_instagram.png);
+}
+#mobile_menu .sns li a.twitter {
+    background-image: url(../images/main/ico_twitter.png);
+}
+
+#mobile_menu .sns li a:hover {
+    border: 2px solid #BFFF00;
+    border-radius: 8px;
+}
 
 
 /* top버튼 */
@@ -483,6 +556,15 @@ footer .footer_menu li a {
     }
     
 
+    #main_header > .lnb_container {
+        display: none;
+    }
+
+    #main_header > .lnb_container .lnb {
+        display: none;
+    }
+
+
     .topBtn {
         right: -15px;
     }
@@ -490,15 +572,6 @@ footer .footer_menu li a {
     .topBtn img {
         width: 50%;
     }
-
-
-
-    /* 모바일메뉴 */
-
-    #mobilde_menu .nav {
-        margin-top: 140px;
-    }
-
 
 
     /* 푸터 */
@@ -587,41 +660,30 @@ footer .footer_menu li a {
     }
     
     
-    /* .gnb_menu {
-        margin-left: 40px;
+    #main_header > .lnb_container .lnb .drodown1 {
+        margin-left: 100px;
     }
-
-    #main_header .logo {
-        width: 70px;
+    
+    #main_header > .lnb_container .lnb .drodown2 {
+        margin-left: 10px;
     }
-
-    #main_header .logo a {
-        width: 90px;
-        height: 30px;
-        margin-top: 50px;
+    
+    #main_header > .lnb_container .lnb .drodown4 {
+        margin-left: 90px;
     }
-
-    #main_header .nav
-    #main_header .nav > li {
-        padding-right: 0;
-    }
-
-    #main_header .nav > li a {
-        font-size: 1.2rem;
+    
+    
+    #main_header > .lnb_container .lnb ul > li {
+        text-align: left;
         padding: 10px;
+        left: 30px;
     }
-
-    #main_header .sns_menu > ul >  li {
-        width: 30px;
-        height: 30px;
-        margin-top: 50px;
+    
+    #main_header > .lnb_container .lnb ul > li a {
+        font-size: 1.0rem;
+        font-weight: 500;
     }
-
-    #main_header .sns_menu > ul >  li a {
-        width: 25px;
-        height: 25px;
-    } */
-
+    
 
     .footer_logo {
         /* width: 80%; */
@@ -678,6 +740,31 @@ footer .footer_menu li a {
 
     .gnb_menu {
         margin-left: 5px;
+    }
+
+
+    #main_header > .lnb_container .lnb .drodown1 {
+        margin-left: 100px;
+    }
+    
+    #main_header > .lnb_container .lnb .drodown2 {
+        margin-left: 10px;
+    }
+    
+    #main_header > .lnb_container .lnb .drodown4 {
+        margin-left: 80px;
+    }
+    
+    
+    #main_header > .lnb_container .lnb ul > li {
+        text-align: left;
+        padding: 10px;
+        left: 30px;
+    }
+    
+    #main_header > .lnb_container .lnb ul > li a {
+        font-size: 1.0rem;
+        font-weight: 500;
     }
 
     .footer_logo {
@@ -750,6 +837,30 @@ footer .footer_menu li a {
         height: 30px;
     }
 
+    #main_header > .lnb_container .lnb .drodown1 {
+        margin-left: 100px;
+    }
+    
+    #main_header > .lnb_container .lnb .drodown2 {
+        margin-left: 10px;
+    }
+    
+    #main_header > .lnb_container .lnb .drodown4 {
+        margin-left: 50px;
+    }
+    
+    
+    #main_header > .lnb_container .lnb ul > li {
+        text-align: left;
+        padding: 10px;
+        left: 30px;
+    }
+    
+    #main_header > .lnb_container .lnb ul > li a {
+        font-size: 1.0rem;
+        font-weight: 500;
+    }
+    
 
     .footer_logo {
         height: 40px;
@@ -804,47 +915,29 @@ footer .footer_menu li a {
     }
 
     
-    /* #main_header {
-        max-width: 100%;
+    #main_header > .lnb_container .lnb .drodown1 {
+        margin-left: 110px;
     }
-
-    .gnb_menu {
-        width: 90vw;
-        margin-left: 50px;
-    }
-
-    #main_header .logo {
-        width: 90px;
-    }
-
-    #main_header .logo a {
-        width: 90px;
-        height: 30px;
-        margin-top: 50px;
-    }
-
-    #main_header .nav
-    #main_header .nav > li {
-        padding-right: 1px;
-    }
-
-    #main_header .nav > li a {
-        font-size: 1.5rem;
-        padding: 10px 15px;
-    }
-
-    #main_header .sns_menu > ul >  li {
-        width: 35px;
-        height: 35px;
-        margin-top: 50px;
-    }
-
-    #main_header .sns_menu > ul >  li a {
-        width: 30px;
-        height: 30px;
-    }   */
     
-    /* lnb메뉴 */
+    #main_header > .lnb_container .lnb .drodown2 {
+        margin-left: 23px;
+    }
+    
+    #main_header > .lnb_container .lnb .drodown4 {
+        margin-left: 128px;
+    }
+    
+    
+    #main_header > .lnb_container .lnb ul > li {
+        text-align: left;
+        padding: 10px;
+        left: 30px;
+    }
+    
+    #main_header > .lnb_container .lnb ul > li a {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
     
 
 
@@ -893,6 +986,32 @@ footer .footer_menu li a {
         width: 50px;
         height: 50px;
     }
+
+
+    #main_header > .lnb_container .lnb .drodown1 {
+        margin-left: 215px;
+    }
+    
+    #main_header > .lnb_container .lnb .drodown2 {
+        margin-left: 40px;
+    }
+    
+    #main_header > .lnb_container .lnb .drodown4 {
+        margin-left: 160px;
+    }
+    
+    
+    #main_header > .lnb_container .lnb ul > li {
+        text-align: left;
+        padding: 20px;
+        left: 30px;
+    }
+    
+    #main_header > .lnb_container .lnb ul > li a {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
 
     .footer_logo img {
         left: 147px;
