@@ -492,9 +492,16 @@ footer .footer_menu li a {
     }
 
 
+
+    /* 모바일메뉴 */
+
     #mobilde_menu .nav {
         margin-top: 140px;
     }
+
+
+
+    /* 푸터 */
 
 
     #main_footer {
