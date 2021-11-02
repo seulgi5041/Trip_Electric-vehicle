@@ -7,7 +7,7 @@
 }
 html { 
     font-size:62.5%;
-    background-color: #0F4C81;
+    background-color: #0F4C81 !important;
     color: #fff;
 }
 a { 
@@ -177,7 +177,7 @@ ul { list-style: none; }
     height: 1px;
     background: #BFFF00;
     top: 139px;
-    /* z-index: 2; */
+    z-index: 2;
 }
 
 /* lnb_하위메뉴 */
@@ -269,14 +269,18 @@ ul { list-style: none; }
 
 /* 모바일 메뉴(기본 CSS) */
 #mobile_menu {
-    /* background-color: #0F4C81; */
+    display: none;
+    background-color: #0F4C81;
     position: relative;
-    top: 100px;
+    height: 100vh;
+    /* top: 150px; */
 }
 
 #mobile_menu .nav {
-    top: 40px;
-    padding: 20px;
+    /* top: 40px; */
+    /* padding: 20px; */
+    padding-top: 180px;
+    padding-left: 20px;
 }
 
 #mobile_menu .nav li {
@@ -299,6 +303,7 @@ ul { list-style: none; }
     position: relative;
     top: 60px;
     padding: 20px;
+    padding-left: 20px;
     
     width: 100%;
     max-width: 320px;
@@ -525,7 +530,7 @@ footer .footer_menu li a {
 @media screen and (max-width: 767px) {
 
     #main_header > .gnb_container {
-        height: 100px;
+        height: 80px;
     }
 
     #main_header .gnb_menu .nav {display: none;}
@@ -540,7 +545,7 @@ footer .footer_menu li a {
         width: 100%;
         height: 1px;
         background: #BFFF00;
-        top: 101px;
+        top: 81px;
     }
 
     .logo a.electric_car {        
@@ -622,14 +627,28 @@ footer .footer_menu li a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 909px) {
+
+    #main_header > .gnb_container {
+        height: 130px;
+    }
     
     #main_header .logo {
-        margin-top: 10px;
+        margin-top: 30px;
     }
     
     #main_header .gnb_menu .nav {
         width: 70%;
     }
+
+
+    .path {
+        position: fixed;
+        width: 100%;
+        height: 1px;
+        background: #BFFF00;
+        top: 131px;
+    }
+
 
     #main_header .nav > li { padding-left: 0; }
 
@@ -659,6 +678,9 @@ footer .footer_menu li a {
         margin-left: 5px;
     }
     
+    #main_header > .lnb_container {
+        top: 132px;
+    }
     
     #main_header > .lnb_container .lnb .drodown1 {
         margin-left: 100px;
@@ -983,8 +1005,8 @@ footer .footer_menu li a {
     #main_header .sns_menu > ul >  li {
         margin-top: 40px;
         margin-left: 0;
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
     }
 
 

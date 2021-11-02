@@ -105,29 +105,29 @@
                 <div class="car1">
                     <img src="../images/info/charge_info.png" alt="전기차의 충전방식">
                     <table class="charge_table">
-                        <thead>
-                            <tr>
+                        <thead class="table_title">
+                            <tr class="t_title">
                                 <th>구분</th>
                                 <th>용량</th>
                                 <th>충전전압</th>
                                 <th>시간</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="table_sub">
                             <tr>
-                                <th>급속</th>
+                                <th class="title">급속</th>
                                 <td>50~100kW</td>
                                 <td>450VDC</td>
                                 <td>30~60분</td>
                             </tr>
                             <tr>
-                                <th>완속</th>
+                                <th class="title">완속</th>
                                 <td>7kW</td>
                                 <td>220VDC</td>
                                 <td>6시간</td>
                             </tr>
                             <tr>
-                                <th>이동형</th>
+                                <th class="title">이동형</th>
                                 <td>3.2kW</td>
                                 <td>220VDC</td>
                                 <td>8~9시간</td>
@@ -145,8 +145,8 @@
             
 
                 <div class="info_title">
-                    <div class="bar"></div>
-                    <h3>차량별 충전단자</h3>
+                    <div class="bar socket"></div>
+                    <h3 class="socket">차량별 충전단자</h3>
                 </div>
                 <div class="car1">
                     <img src="../images/info/socket_info.png" alt="차량별 충전단자">
@@ -155,6 +155,10 @@
             </div>
         </article>
     </section>
+
+
+    <div id="mobile_menu"></div>
+
 
     <!-- top_button -->
     <a class="topBtn" href="#">
@@ -192,7 +196,8 @@
 
 <script src="../js/common.js"></script>
 <script src="../js/main.js"></script>
-<script src="../js/responsive.js"></script>
+<script src="../js/responsive_info.js"></script>
+
 
 
 </body>
