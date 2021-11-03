@@ -124,8 +124,17 @@ html {
 
 
 .hidden_box {
+    position: relative;
     display: none;
+    width: 100%;
+    max-width: 350px;
+    height: 440px;
+    background: #0F4C81;
+    margin: 10px;
+    cursor: pointer;
 }
+
+
 
 
 
@@ -196,7 +205,7 @@ html {
     }
 
     .qna_container {
-        max-width: 767px;
+        /* max-width: 767px; */
         width: 100%;
     }
 
