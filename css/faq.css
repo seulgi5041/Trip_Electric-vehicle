@@ -21,7 +21,8 @@ html {
 
 
 /* 메인 */
-#faq_main {
+#main_content {
+    /* background-color: #fff; */
     position: relative;
     height: auto;
     max-width: 1200px;
@@ -122,19 +123,23 @@ html {
 
 
 
-.hidden_quesion_box {
+.hidden_box {
     display: none;
 }
 
 
 
+
+
+/* 미디어 쿼리 */
 @media screen and (max-width: 767px) {
     #title_box {
         width: 100%;
+        padding-top: 81px;
     }
 
     #title_box h1 {
-        font-size: 1.8rem;
+        font-size: 1.rem;
         padding: 50px;
     }
 
@@ -172,7 +177,14 @@ html {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 766px) and (max-width: 909px) {
+    #title_box {
+        padding-top: 131px;
+    }
+
+}
+
+@media screen and (min-width: 766px) and (max-width: 1023px) {
     #title_box {
         width: 100%;
     }

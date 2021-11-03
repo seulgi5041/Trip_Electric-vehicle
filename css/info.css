@@ -3,7 +3,7 @@
 /* 초기화 */
 
 html { 
-    background-color: #fff;
+    background-color: #fff !important;
 }
 
 
@@ -21,7 +21,6 @@ html {
 
 /* aside-메뉴 */
 #info_menu {
-    /* width: 400px; */
     position: fixed;
     overflow: auto;
     height: 100%;
@@ -148,7 +147,7 @@ html {
 
 .info .car1 p {
     color: #000;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-top: 20px;
 }
 
@@ -162,7 +161,7 @@ html {
 
 .charge_table {
     float: left;
-
+    display: block;
     margin-left: 15px;
 }
 
@@ -213,12 +212,16 @@ html {
 
 
 
+
+
+/* 미디어쿼리 */
+
 @media screen and (max-width: 767px) {
     #info_menu {
         top: 150px;
         left: 20px;
     }
-    
+
     .info {
         width: 100%;
     }
@@ -242,23 +245,42 @@ html {
 
     #info_main > .info_container {
         max-width: 100%;
-        height: 1800px;
+        height: 1170px;
     }
+    
 
     #info_main > .info_container > .infban img {
         width: 100%;
+        top: 82px;
     }
 
     .info .info_title {
         top: 100px;
     }
+    
+    .info .info_title .bar {
+        width: 4px;
+        height: 15px;
+        background: #0F4C81;
+        display: inline-block;
+    }
+    
+    .info .info_title h3 {
+        font-size: 1.4rem;
+        color: #000;
+        display: inline-block;
+        height: 27px;
+        position: absolute;
+        padding-left: 3px;
+    }
 
     .info .info_title p {
-        font-size: 1.3rem;
+        padding-top: 10px;
+        font-size: 1.2rem;
     }
 
     .info .car1 {
-        top: 80px;
+        top: 50px;
     }
 
     .info .car1 img {
@@ -295,9 +317,42 @@ html {
         padding-top: 30px;
     }
 
+
+    .info .info_title .char {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: #000;
+    }
+    
+    .info .info_title .char h4 {
+        font-size: 1.0rem;
+        padding-left: 15px;
+    }
+    
+    .info .info_title .char p {
+        font-size: 1.0rem;
+        padding-top: 9px;
+        padding-left: 25px;
+    }
+
+    .info .info_title:last-child {
+        margin-top: 5px;
+    }
+
+
+    .info .car1 .sub1_2 {
+        margin-left: 170px;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 909px) {
+
+    #info_main > .info_container > .infban img {
+        top: 131px;
+    }
+}
+
+@media screen and (min-width: 908px) and (max-width: 1023px) {
     #info_menu {
         top: 150px;
         left: 20px;
@@ -339,19 +394,36 @@ html {
     }
 
     #info_main > .info_container > .infban img {
-        width: 80%;
+        width: 100%;
     }
 
     .info .info_title {
-        /* top: 150px; */
+        height: 20px;
+        top: 200px;
+    }
+    
+    .info .info_title .bar {
+        width: 5px;
+        height: 18px;
+        background: #0F4C81;
+        display: inline-block;
+    }
+    
+    .info .info_title h3 {
+        font-size: 1.6rem;
+        color: #000;
+        display: inline-block;
+        height: 27px;
+        position: absolute;
+        padding-left: 3px;
     }
 
     .info .info_title p {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 
     .info .car1 {
-        top : 190px;
+        top: 190px;
     }
     .info .car1 img {
         width: 40%;
@@ -362,12 +434,12 @@ html {
         padding-top: 10px;
     }
     
-    .info .car1 p:first-child {
-        padding-top: 70px;
+    .info .car1 .sub1:first-of-type {
+        margin-top: -20px;
     }
     
     .info .car1 .sub1:last-child {
-        margin-top: 80px;
+        margin-top: 90px;
     }
     
 
@@ -386,16 +458,129 @@ html {
         text-align: right;
         padding-top: 50px;
     }
+
+    .info .info_title .char {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: #000;
+    }
+    
+    .info .info_title .char h4 {
+        font-size: 1.3rem;
+        padding-left: 15px;
+    }
+    
+    .info .info_title .char p {
+        font-size: 1.3rem;
+        padding-top: 10px;
+        padding-left: 25px;
+    }
+    
+
+    /* .info .car1 .sub1_2 p:first-child {
+        padding-top: 40px;
+        padding-left: 60px;
+    } */
+
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    #info_menu {
+        top: 200px;
+        left: 40px;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info h2 {
+        font-size: 2.0rem;
+        font-weight: 700;
+        padding: 10px 18px;
+    }
+    
+    .info a {
+        padding: 16px 10px;
+        padding-left: 13px;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    #info_main {
+        margin-left: 280px;
+    }
+
+    #info_main > .info_container {
+        max-width: 100%;
+        height: 2100px;
+    }
+
+    #info_main > .info_container {
+        max-width: 100%;
+    }
 
     #info_main > .info_container > .infban img {
         width: 100%;
     }
 
-    #info_main > .info_container > .infban img {
-        width: 100%;
-        height: auto;
+    .info .info_title {
+        height: 20px;
+        top: 200px;
     }
+    
+    .info .info_title .bar {
+        width: 7px;
+        height: 22px;
+        background: #0F4C81;
+        display: inline-block;
+    }
+    
+    .info .info_title h3 {
+        font-size: 1.9rem;
+        color: #000;
+        display: inline-block;
+        height: 27px;
+        position: absolute;
+        padding-left: 4px;
+    }
+
+    .info .info_title p {
+        font-size: 1.5rem;
+    }
+
+    .info .car1 {
+        top : 190px;
+    }
+    .info .car1 img {
+        width: 50%;
+    }
+
+    .info .car1 p {
+        font-size: 1.3rem;
+        padding-top: 10px;
+    }
+    
+    .info .car1 .sub1:first-of-type {
+        margin-top: 5px;
+    }
+    
+    .info .car1 .sub1:last-child {
+        margin-top: 150px;
+    }
+    
+    .info .car1 .sub1_2 {
+        margin-left: 0;
+    }
+
+    .info .car1 .sub1 p {
+        padding-left: 6px;
+    }
+
+    .info .car1 .sub1_2 p:first-child {
+        padding-top: 20px;
+    }
+
+
 }

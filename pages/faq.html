@@ -76,11 +76,13 @@
         </div>
     </header>
 
+    
+
 
 
 
     <!-- 메인 -->
-    <div id="faq_main">
+    <div id="main_content">
         <article id="title_box">
             <h1>전기차에 대한 오해와 관련 꿀팁까지 모두 알려드려요!</h1>
         </article>
@@ -92,7 +94,7 @@
                     <div class="question_text">
                         <p>비 오는 날<br /> 충전하면<br /> 위험하지<br /> 않나요?</p>
                     </div>
-                    <img src="../images/faq/faq1_ico.svg" alt="비 오는 날 충전하면 위험하지 않나요?">
+                    <img src="../images/faq/faq1_ico.png" alt="비 오는 날 충전하면 위험하지 않나요?">
                 </div>
 
                 <div class="question_box">
@@ -135,7 +137,10 @@
                     <img src="../images/faq/faq6_ico.png" alt="자동 저속 모드로 변경 됐어요">
                 </div>
 
-                <div class="question_box hidden_quesion_box">
+
+
+                <!-- 숨겨져 있는 부분: 배열?? 불러옴. -->
+                <div class="question_box hidden_box">
                     <div class="faq-gradient"></div>
                     <div class="question_text">
                         <p>교통 사고가 났을 때<br />  전기차라서 특히<br /> 주의해야 할<br /> 요소가 있나요?</p>
@@ -143,7 +148,7 @@
                     <img src="../images/faq/faq6_ico.png" alt="교통 사고가 났을 때 전기차라서 특히 더 주의해야 할 요소가 있나요?">
                 </div>
 
-                <div class="question_box hidden_quesion_box">
+                <div class="question_box hidden_box">
                     <div class="faq-gradient"></div>
                     <div class="question_text">
                         <p><br />  충전 중<br /> 중단이<br /> 가능한가요?</p>
@@ -151,7 +156,7 @@
                     <img src="../images/faq/faq6_ico.png" alt="충전 중 중단이 가능한가요?">
                 </div>
 
-                <div class="question_box hidden_quesion_box">
+                <div class="question_box hidden_box">
                     <div class="faq-gradient"></div>
                     <div class="question_text">
                         <p><br />  시동을 켰는데<br /> 엔진소리가<br /> 나지 않아요!</p>
@@ -159,7 +164,7 @@
                     <img src="../images/faq/faq6_ico.png" alt="시동을 켰는데 엔진소리가 나지 않아요!">
                 </div>
 
-                <div class="question_box hidden_quesion_box">
+                <div class="question_box hidden_box">
                     <div class="faq-gradient"></div>
                     <div class="question_text">
                         <p>구행 가능한<br /> 거리만큼 안탔는데 <br />주행거리가 <br /> 줄어들었어요!</p>
@@ -167,7 +172,7 @@
                     <img src="../images/faq/faq6_ico.png" alt="주행 가능한 거리만큼 안 탔는데 주행 거리가 줄어들었어요!">
                 </div>
 
-                <div class="question_box hidden_quesion_box">
+                <div class="question_box hidden_box">
                     <div class="faq-gradient"></div>
                     <div class="question_text">
                         <p><br /> 방전되었을 때는<br /> 어떻게 해야 <br /> 하나요?</p>
@@ -175,23 +180,26 @@
                     <img src="../images/faq/faq6_ico.png" alt="방전되었을 때는 어떻게 해야 하나요?">
                 </div>
 
-                <div class="question_box hidden_quesion_box">
+                <div class="question_box hidden_box">
                     <div class="faq-gradient"></div>
                     <div class="question_text">
                         <p><br />  충전할 때마다<br /> 주행 가능한<br /> 거리가 달라요.</p>
                     </div>
                     <img src="../images/faq/faq6_ico.png" alt="충전할 때마다 주행 가능한 거리가 달라요.">
                 </div>
+
             </article>
             
             <aside id="moreicon">
-                <a href="#" class="moricon hvr-icon-spin">
+                <a href="#moreicon" class="moricon hvr-icon-spin">
                     <img src="../images/main/icon/more.svg" class="hvr-icon" alt="더보기">
                 </a>
             </aside>
         </section>
 
     </div>
+
+    <div id="mobile_menu"></div>
 
     <!-- top_button -->
     <a class="topBtn" href="#">
@@ -231,6 +239,7 @@
     <!-- <script src="../js/common.js"></script> -->
     <script src="../js/main.js"></script>
     <script src="../js/responsive.js"></script>
+    <script src="../js/faq.js"></script>
     
 
 </body>

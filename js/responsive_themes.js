@@ -34,7 +34,6 @@ $(function(){
             // .css는 css의 속성을 바꿔줄 수 있는 태그. display에서 block으로 바꿔라.
         },
         "mouseleave" : function() {
-
         }
     });
 
@@ -49,9 +48,7 @@ $(function(){
                 return;
             }
         }
-
     });
-
 
     // 넓이가 767 이상이되면 하위메뉴 자동으로 해제
     $(window).resize(function() {
@@ -78,9 +75,7 @@ $(function(){
 
                 /* 모바일 전체 메뉴 show */
                 $("#main_header").height();
-                $("#main_content").hide();
-                $("#main_footer").hide();
-                $(".topBtn").hide();
+                $("#fullpage").hide();
                 $("#mobile_menu").show();
                 //#mobile_menu 하위 태그 초기화
                 $("#mobile_menu").empty(); 
@@ -93,10 +88,8 @@ $(function(){
                 //복제한 nav를 넣어서 id값이 모바일메뉴인 아이에 덧붙여준다.
                 $("#mobile_menu").append(nav);
                 $("#mobile_menu").show();
-                $("#mobile_menu").css("background-color:","#0F4C81");
                 $("#mobile_menu").append(sns);
                 $("#mobile_menu").show();
-                $("#mobile_menu").css("background-color:","#0F4C81");
                 
             } else {
                 // 닫기 메뉴 버튼이 보일때
@@ -106,9 +99,7 @@ $(function(){
 
                 /* 전체 메뉴 show */
                 $("#main_header").height();
-                $("#main_content").show();
-                $("#main_footer").show();
-                $(".topBtn").show();
+                $("#fullpage").show();
                 $("#mobile_menu").hide();
             }
 
@@ -116,8 +107,6 @@ $(function(){
 
     });
 
-
-    //모바일 버전 벗어나면 해제하기.
     $(window).resize(function() {
         var width = $(window).width(); //사용자가 보는 뷰포트 넓이 구하기
 
@@ -131,9 +120,7 @@ $(function(){
 
                 /* 모바일 전체 메뉴 show */
                 $("#main_header").height();
-                $("#main_content").show();
-                $("#main_footer").show();
-
+                $("#fullpage").show();
                 $("#mobile_menu").hide();
 
             }
@@ -141,3 +128,4 @@ $(function(){
     });
 
 });
+

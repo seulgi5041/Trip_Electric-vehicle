@@ -34,10 +34,12 @@ background-color: #6fa9db;
 color: #fff;
 }
 
+
 tbody th {
 background-color: #6fa9db;
 color: #fff;
 }
+
 
 
 
@@ -54,21 +56,54 @@ color: #fff;
         font-weight: 400;
     }
 
-    .sub1_2 {
-        
-    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-
-    td, th {
-        font-size: 13px;
-        font-weight: 400;
+@media screen and (min-width: 766px) and (max-width: 1001px){
+    th {
+        font-size: 10px;
+        padding: 8px 10px;
     }
+
+    td {
+        font-size: 8px;
+        font-weight: 200;
+        padding: 8px 20px;
+    }
+
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1000px) and (max-width: 1023px){
+
     .charge_table {
-        max-width: 80%;
+        margin-left: 13px;
+    }
+
+    th {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+
+    td {
+        font-size: 8px;
+        font-weight: 200;
+        padding: 8px 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    .charge_table {
+        margin-left: 5px;
+    }
+
+    th {
+        font-size: 12px;
+        padding: 10px 13px;
+    }
+
+    td {
+        font-size: 12px;
+        font-weight: 200;
+        padding: 10px 23px;
     }
 }
