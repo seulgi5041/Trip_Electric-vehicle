@@ -2,7 +2,7 @@
 
 html { 
     font-size:62.5%;
-    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     /* color: #0F4C81; */
 }
 
@@ -15,11 +15,13 @@ html {
     z-index:9;
     text-align:center;
     padding: 0;
+    /* height: ; */
 }
 
 .gnb_container {
     height: 139px;
-    background: rgba(15,76,129,0.8) !important;
+    background: #0F4C81;
+    z-index:9
 }
 
 .path { z-index: 2; }
@@ -36,7 +38,7 @@ html {
 
 
 /* 각 풀페이지들의 설정 */
-#section0 {
+#section1 {
     background: url(../images/location/historypage.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,14 +46,14 @@ html {
     /* height: auto; */
 }
 
-#section1 {
+#section2 {
     background: url(../images/location/bluepage.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
 }
 
-#section2 {
+#section3 {
     background: url(../images/location/snspage.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,8 +64,12 @@ html {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    /* height: 969px; */
+    margin-top: 173px;
 }
+
+
+
+
 
     /* Style for our header texts
 * --------------------------------------- */
@@ -74,13 +80,16 @@ html {
 .intro_title h3{
     font-size: 1.8rem;
     font-weight: 900;
-    color: #0F4C81;
+    color: #fff;
     margin:0;
 }
 .intro_title p{
     font-size: 1.0rem;
-    color: #0F4C81;
+    color: #fff;
 }
+
+
+
 
 
 
@@ -89,7 +98,7 @@ html {
 .themes_container {
     width: 100%;
     max-width: 1200px;
-    margin: 140px auto;
+    margin: 0 auto;
 }
 
 .themes_box {
@@ -100,9 +109,9 @@ html {
     text-align: center;
 }
 
-.themes_box:first-child {
+/* .themes_box:first-child {
     top: 131px;
-}
+} */
 
 .themes_box img {
     width: 260px;
@@ -112,6 +121,8 @@ html {
 .themes_box:last-child {
     text-align: left;
 }
+
+
 
 
 /* 애니메이션효과 */
@@ -220,10 +231,10 @@ figure.location a {
 }
 figure.location:hover img,
 figure.location.hover img {
-    zoom: 1;
+    /* zoom: 1; */
     filter: alpha(opacity=35);
-    -webkit-opacity: 0.35;
-    opacity: 0.35;
+    -webkit-opacity: 0.5;
+    opacity: 0.5;
 }
 figure.location:hover .title:before,
 figure.location.hover .title:before,
@@ -253,6 +264,10 @@ figure.location.hover figcaption {
 
 
 
+/* 모바일_홈 */
+#mobile_menu .only_mb {
+    display: none;
+}
 
 
 
@@ -304,10 +319,15 @@ figure.location.hover figcaption {
 
 @media screen and (min-width: 766px) and (max-width: 909px) {
 
+    
 
 }
 
 @media screen and (min-width: 766px) and (max-width: 1023px) {
+
+    #main_header {
+        height: auto;
+    }
 
     .intro {
         height: auto;

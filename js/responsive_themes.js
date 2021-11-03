@@ -74,12 +74,13 @@ $(function(){
                 // $("#main_header .nav > li").css("display", "block");
 
                 /* 모바일 전체 메뉴 show */
-                $("#main_header").height();
+                $("#main_header").height("80px");
                 $("#fullpage").hide();
                 $("#mobile_menu").show();
                 //#mobile_menu 하위 태그 초기화
-                $("#mobile_menu").empty(); 
+                $("#mobile_menu").empty();
                 $(".nav li").eq(4).hide();
+                
 
 
 
