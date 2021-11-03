@@ -450,6 +450,9 @@ footer .footer_menu li a {
 
 
 
+
+
+
 /* 1440부터 */
 @media (max-width:1440px) {
     #main_header {
@@ -626,7 +629,7 @@ footer .footer_menu li a {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 909px) {
+@media screen and (min-width: 766px) and (max-width: 909px) {
 
     #main_header > .gnb_container {
         height: 130px;

@@ -24,17 +24,7 @@ html {
 
 .path { z-index: 2; }
 
-/* #main_footer{
-    position:fixed;
-    height: 139px;
-    display:block;
-    width: 100%;
-    background: #0F4C81;
-    z-index:9;
-    text-align:center;
-    color: #f2f2f2;
-    padding: 0;
-} */
+
 
 #main_header{
     top:0px;
@@ -72,14 +62,14 @@ html {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    height: 969px;
+    /* height: 969px; */
 }
 
     /* Style for our header texts
 * --------------------------------------- */
 .intro_title {
     text-align: center;
-    margin: 10px;
+    padding-top: 145px;
 }
 .intro_title h3{
     font-size: 1.8rem;
@@ -99,19 +89,19 @@ html {
 .themes_container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 140px auto;
 }
 
 .themes_box {
     /* display: inline-block; */
     position: relative;
     /* 집 가서 수정할것 */
-    top: 140px;
+    top: 10px;
     text-align: center;
 }
 
 .themes_box:first-child {
-    top: 140px;
+    /* top: 131px; */
 }
 
 .themes_box img {
@@ -312,7 +302,12 @@ figure.location.hover figcaption {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 766px) and (max-width: 909px) {
+
+
+}
+
+@media screen and (min-width: 766px) and (max-width: 1023px) {
 
     .intro {
         height: auto;
@@ -340,7 +335,7 @@ figure.location.hover figcaption {
 @media screen and (min-width: 1024px) {
     .themes_container {
         width: 100%;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
     
     .themes_box {

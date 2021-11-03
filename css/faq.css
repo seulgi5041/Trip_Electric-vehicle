@@ -129,13 +129,17 @@ html {
 
 
 
+
+
+/* 미디어 쿼리 */
 @media screen and (max-width: 767px) {
     #title_box {
         width: 100%;
+        padding-top: 81px;
     }
 
     #title_box h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         padding: 50px;
     }
 
@@ -173,7 +177,14 @@ html {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 766px) and (max-width: 909px) {
+    #title_box {
+        padding-top: 131px;
+    }
+
+}
+
+@media screen and (min-width: 766px) and (max-width: 1023px) {
     #title_box {
         width: 100%;
     }

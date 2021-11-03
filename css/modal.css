@@ -39,3 +39,36 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+
+
+
+@media screen and (max-width: 767px) {
+    .modal-content {
+        margin-top: 30%;
+    }
+
+    .modal_close {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 766px) and (max-width: 1024px) {
+    .modal-content {
+        margin-top: 25%;
+    }
+
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
+    .modal-content {
+        margin-top: 20%;
+    }
+}
+
+
+@media screen and (min-width: 1441px) {
+    .modal-content {
+        margin-top: 10%;
+    }
+}
