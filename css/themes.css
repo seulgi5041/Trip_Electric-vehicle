@@ -264,13 +264,6 @@ figure.location.hover figcaption {
 
 
 
-/* 모바일_홈 */
-#mobile_menu .only_mb {
-    display: none;
-}
-
-
-
 
 
 /* 미디어 쿼리 */
@@ -278,6 +271,8 @@ figure.location.hover figcaption {
 
     .intro {
         height: auto;
+        margin-top: 100px;
+
     }
 
     .themes_container {
