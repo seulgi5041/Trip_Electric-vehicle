@@ -2,6 +2,12 @@ var clickFlagBig = 2;
 var clickFlagMid = 3;
 var clickFlagSmall = 6;
 
+
+
+//https://wikim.tistory.com/178
+
+
+
 $('.hvr-icon').click(function(){
     var width = $(window).width();   
 
@@ -16,7 +22,7 @@ $('.hvr-icon').click(function(){
         //     $(".hidden_box").eq(i).show();
 
         // }
-        
+
         if (clickFlagBig == 2) {
             $(".hidden_box").eq(0).show();
             $(".hidden_box").eq(1).show();
