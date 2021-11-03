@@ -41,6 +41,7 @@ $('.hvr-icon').click(function(){
         // console.log(width); 
 
     } else if (width >= 563) {
+        //세 번을 클릭해야
         if (clickFlagMid == 3) {
             $(".hidden_box").eq(0).show();
             $(".hidden_box").eq(0).css("display","inline-block");
@@ -48,13 +49,11 @@ $('.hvr-icon').click(function(){
             $(".hidden_box").eq(1).css("display","inline-block");
         } 
 
-
         if (clickFlagMid == 2) {
             $(".hidden_box").eq(2).show();
             $(".hidden_box").eq(2).css("display","inline-block");
             $(".hidden_box").eq(3).show();
             $(".hidden_box").eq(3).css("display","inline-block");
-
         }
 
         if (clickFlagMid == 1) {
@@ -70,7 +69,7 @@ $('.hvr-icon').click(function(){
         
     } else {
        //6번을 클릭해야 나올수 있는
-       if (clickFlagSmall == 6) {
+        if (clickFlagSmall == 6) {
         $(".hidden_box").eq(0).show();
         $(".hidden_box").eq(0).css("display","inline-block");
     }
