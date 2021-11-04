@@ -279,8 +279,8 @@ ul { list-style: none; }
 #mobile_menu .nav {
     /* top: 40px; */
     /* padding: 20px; */
-    padding-top: 180px;
-    padding-left: 20px;
+    padding-top: 150px;
+    /* padding-left: 15px; */
 }
 
 #mobile_menu .nav li {
@@ -288,7 +288,7 @@ ul { list-style: none; }
 }
 
 #mobile_menu .nav li a {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     font-weight: 800;
 }
 
@@ -314,7 +314,7 @@ ul { list-style: none; }
 #mobile_menu .sns li {
     float: left;
 
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 #mobile_menu .sns li a {
@@ -562,7 +562,7 @@ footer .footer_menu li a {
     #main_header .trigger{
         display: block;
     }
-    
+
 
     #main_header > .lnb_container {
         display: none;

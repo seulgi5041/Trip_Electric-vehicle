@@ -308,6 +308,10 @@ figure.location.hover figcaption {
         color: #000000;
     }
 
+    .themes_box:last-child {
+        text-align: center;
+    }
+
 
 
 }
@@ -344,6 +348,10 @@ figure.location.hover figcaption {
         padding: 5px 10px;
         color: #000000;
     }
+
+    .themes_box:last-child {
+        text-align: center;
+    }
     
 }
 
@@ -357,6 +365,7 @@ figure.location.hover figcaption {
         display: inline-block;
         text-align: center;
     }
+
     
 
 }
