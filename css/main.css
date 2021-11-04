@@ -242,8 +242,8 @@ video {
     display: block;
     height: 727px;
     /* width:  */
-    max-width: 1300px;
-    width: 100%;
+    /* max-width: 1300px;
+    width: 100%; */
 }
 
 #check_container h2 {
@@ -337,7 +337,7 @@ video {
     width: 100%;
     max-width: 350px;
     height: 440px;
-    background: #ff9500;
+    background: #BFFF00;
     /* box-shadow: 0 20px 35px rgba(0, 0, 0, 0.26); */
 }
 
@@ -398,7 +398,7 @@ video {
 }
 
 .question_text p {
-    color: white;
+    color: #0F4C81;
     font-size: 2.1rem;
     font-weight: 800;
     line-height: 1.8;
@@ -618,6 +618,79 @@ video {
 
 }
 
+
+@media screen and (max-width: 767px) {
+    
+
+    /* 여행전확인(배터리그림, 충전단자그림) */
+
+    #main_content > #check_content {
+        margin-top: 150px;
+        margin-bottom: 200px;
+    }
+    
+    #check_container {
+        height: 650px;
+        
+    }
+
+    #check_content > #active_box {
+        top: 60px;
+    }
+
+
+    /* 배터리 그림 */
+    
+    .charge_img img {
+        height: 400px;
+    }
+    #active_box .text {
+        /* display: none; */
+        /* font-size: 0.7rem; */
+        top: 50px;
+        left: 50px;
+    }
+
+    #active_box .text p {
+        padding-top: 40px;
+        font-size: 1.7rem;
+    }
+
+
+
+
+
+    /* 오른쪽 박스 부분 */
+
+    #check_box {
+        width: 200px;
+        height: 430px;
+    }
+
+    .circle {
+        /* float: left; */
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    
+    .circle img {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+    }
+    
+    .circle p {
+        font-size: 1.0rem;
+    }
+
+
+}
+
+
+
+
+
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
 
@@ -635,9 +708,64 @@ video {
         /* width: 100%; */
     }
 
-    #check_content {
-        width: 80vw;
+
+    /* 여행전확인(배터리그림, 충전단자그림) */
+
+    #main_content > #check_content {
+        margin-top: 150px;
+        margin-bottom: 200px;
     }
+    
+    #check_container {
+        height: 830px;
+        
+    }
+
+    /* 배터리 그림 */
+    
+    .charge_img img {
+        height: 600px;
+    }
+    #active_box .text {
+        /* display: none; */
+        /* font-size: 0.7rem; */
+        top: 50px;
+        left: 50px;
+    }
+
+    #active_box .text p {
+        padding-top: 60px;
+        font-size: 2.0rem;
+    }
+
+
+
+
+    /* 오른쪽 박스 부분 */
+
+    #check_box {
+        width: 400px;
+        height: 770px;
+    }
+
+    .circle {
+        float: left;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+    
+    .circle img {
+        display: block;
+        margin: 0 auto;
+        width: 55%;
+    }
+    
+    .circle p {
+        font-size: 1.5rem;
+    }
+
+
+    /* faq */
     
     #qna_content {
         max-width: 100%;
@@ -686,6 +814,64 @@ video {
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     
+
+    #main_content > #check_content {
+        margin-top: 150px;
+        margin-bottom: 200px;
+    }
+    
+    #check_container {
+        height: 400px;
+        
+    }
+
+    /* 배터리 그림 */
+    
+    .charge_img img {
+        display: none;
+    }
+
+    #active_box .text {
+        top: -70px;
+        left: 30px;
+        /* padding-top: 80px; */
+    }
+    
+    #active_box .text p{
+        padding-top: 30px;
+    }
+    
+    
+    .active {
+        font-size: 1.9rem;
+    }
+
+
+
+
+    
+    /* 오른쪽 박스 부분 */
+
+    #check_box {
+        width: 1000px;
+        height: 340px;
+    }
+
+    .circle {
+        float: left;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+    
+    .circle img {
+        display: block;
+        margin: 5px auto;
+        width: 80%;
+    }
+    
+    .circle p {
+        font-size: 1.5rem;
+    }
 
 
 }
