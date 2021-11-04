@@ -488,6 +488,14 @@ video {
     }
 
 
+
+    /* 여행지추천슬라이드 */
+
+    #local_trip h2 {
+        font-size: 2.0rem;
+        padding: 25px 0;
+    }
+
     .card-location img {
         max-width: 100%;
         margin: 30px 0;
@@ -533,6 +541,80 @@ video {
         margin-top: 130px;
     }
 
+
+    /* 여행전확인(배터리그림, 충전단자그림) */
+
+    #main_content > #check_content {
+        margin-top: 150px;
+        margin-bottom: 20px;
+    }
+
+
+    #main_content > #check_content > #active_box {
+        height: 500px;
+    }
+
+    #check_content > #active_box {
+        top: 60px;
+    }
+
+
+    /* 배터리 그림 */
+    
+    .charge_img img {
+        height: 400px;
+    }
+    #active_box .text {
+        /* display: none; */
+        /* font-size: 0.7rem; */
+        top: 50px;
+        left: 50px;
+    }
+
+    #active_box .text p {
+        padding-top: 40px;
+        font-size: 1.7rem;
+    }
+
+
+
+
+
+    /* 오른쪽 박스 부분 */
+
+    #check_container {
+        height: 580px;
+    }
+
+    #check_container h2 {
+        font-size: 2.0rem;
+    }
+
+
+    #check_box {
+        width: 200px;
+        height: 430px;
+    }
+
+    .circle {
+        /* float: left; */
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    
+    .circle img {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+    }
+    
+    .circle p {
+        font-size: 1.0rem;
+    }
+
+
+
+
     /* 슬라이드 */
     #slide_aside > .swiper2 .pc_banner {
         display: none;
@@ -548,10 +630,11 @@ video {
     /* FAQ */
 
     #qna_content {
-        margin-bottom: 80px;
+        margin-bottom: 110px;
     }
 
     .pna_container {
+        margin-top: 70px;
         height: 430px;
     }
 
@@ -617,77 +700,6 @@ video {
     }
 
 }
-
-
-@media screen and (max-width: 767px) {
-    
-
-    /* 여행전확인(배터리그림, 충전단자그림) */
-
-    #main_content > #check_content {
-        margin-top: 150px;
-        margin-bottom: 200px;
-    }
-    
-    #check_container {
-        height: 650px;
-        
-    }
-
-    #check_content > #active_box {
-        top: 60px;
-    }
-
-
-    /* 배터리 그림 */
-    
-    .charge_img img {
-        height: 400px;
-    }
-    #active_box .text {
-        /* display: none; */
-        /* font-size: 0.7rem; */
-        top: 50px;
-        left: 50px;
-    }
-
-    #active_box .text p {
-        padding-top: 40px;
-        font-size: 1.7rem;
-    }
-
-
-
-
-
-    /* 오른쪽 박스 부분 */
-
-    #check_box {
-        width: 200px;
-        height: 430px;
-    }
-
-    .circle {
-        /* float: left; */
-        margin-top: 40px;
-        margin-left: 10px;
-    }
-    
-    .circle img {
-        display: block;
-        margin: 0 auto;
-        width: 40%;
-    }
-    
-    .circle p {
-        font-size: 1.0rem;
-    }
-
-
-}
-
-
-
 
 
 
